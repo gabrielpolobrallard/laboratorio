@@ -1,0 +1,2067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LabDBModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LabDBModel1StoreContainer">
+    <EntitySet Name="Departamento" EntityType="LabDBModel1.Store.Departamento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Localidad" EntityType="LabDBModel1.Store.Localidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Provincia" EntityType="LabDBModel1.Store.Provincia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="LabDBModel1.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Alarma_x_Insumo" EntityType="LabDBModel1.Store.tb_Alarma_x_Insumo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Alarmas_Stock" EntityType="LabDBModel1.Store.tb_Alarmas_Stock" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis" EntityType="LabDBModel1.Store.tb_Analisis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Enzimologia" EntityType="LabDBModel1.Store.tb_Analisis_Enzimologia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Examen_MateriaFecal" EntityType="LabDBModel1.Store.tb_Analisis_Examen_MateriaFecal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Hemograma" EntityType="LabDBModel1.Store.tb_Analisis_Hemograma" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Hemostacia_Coagulacion" EntityType="LabDBModel1.Store.tb_Analisis_Hemostacia_Coagulacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Hepatograma" EntityType="LabDBModel1.Store.tb_Analisis_Hepatograma" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Hormonas" EntityType="LabDBModel1.Store.tb_Analisis_Hormonas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Inmunoglobulinas" EntityType="LabDBModel1.Store.tb_Analisis_Inmunoglobulinas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Inmunologia" EntityType="LabDBModel1.Store.tb_Analisis_Inmunologia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_LipidoGrama_Electroforetico" EntityType="LabDBModel1.Store.tb_Analisis_LipidoGrama_Electroforetico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Microbiologico" EntityType="LabDBModel1.Store.tb_Analisis_Microbiologico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Orina_Complementarios" EntityType="LabDBModel1.Store.tb_Analisis_Orina_Complementarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Orina_Completa" EntityType="LabDBModel1.Store.tb_Analisis_Orina_Completa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Orina_Examen_Fisico_Quimico" EntityType="LabDBModel1.Store.tb_Analisis_Orina_Examen_Fisico_Quimico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Orina_Examen_Sedimento" EntityType="LabDBModel1.Store.tb_Analisis_Orina_Examen_Sedimento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Proteinograma_Electroforetico" EntityType="LabDBModel1.Store.tb_Analisis_Proteinograma_Electroforetico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Analisis_Quimica_Hematica" EntityType="LabDBModel1.Store.tb_Analisis_Quimica_Hematica" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Compras" EntityType="LabDBModel1.Store.tb_Compras" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Contacto_ObraSocial" EntityType="LabDBModel1.Store.tb_Contacto_ObraSocial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Diagnosticos" EntityType="LabDBModel1.Store.tb_Diagnosticos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Direccion_x_Medico" EntityType="LabDBModel1.Store.tb_Direccion_x_Medico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Direccion_x_ObraSocial" EntityType="LabDBModel1.Store.tb_Direccion_x_ObraSocial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Direccion_x_Paciente" EntityType="LabDBModel1.Store.tb_Direccion_x_Paciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Direcciones_x_Donante" EntityType="LabDBModel1.Store.tb_Direcciones_x_Donante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_DireccionObraSocial" EntityType="LabDBModel1.Store.tb_DireccionObraSocial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_DireccionTodos" EntityType="LabDBModel1.Store.tb_DireccionTodos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Donantes" EntityType="LabDBModel1.Store.tb_Donantes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Email_x_donante" EntityType="LabDBModel1.Store.tb_Email_x_donante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Email_x_Paciente" EntityType="LabDBModel1.Store.tb_Email_x_Paciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_EmailsTodos" EntityType="LabDBModel1.Store.tb_EmailsTodos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Estado_Analisis" EntityType="LabDBModel1.Store.tb_Estado_Analisis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Factura" EntityType="LabDBModel1.Store.tb_Factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Factura_x_Analisis" EntityType="LabDBModel1.Store.tb_Factura_x_Analisis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_GrupoSanguineo" EntityType="LabDBModel1.Store.tb_GrupoSanguineo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_InformeStock" EntityType="LabDBModel1.Store.tb_InformeStock" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Insumos" EntityType="LabDBModel1.Store.tb_Insumos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Insumos_x_Informe_Stock" EntityType="LabDBModel1.Store.tb_Insumos_x_Informe_Stock" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_IVA" EntityType="LabDBModel1.Store.tb_IVA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Medicos" EntityType="LabDBModel1.Store.tb_Medicos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Medida_Insumo" EntityType="LabDBModel1.Store.tb_Medida_Insumo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Muestras" EntityType="LabDBModel1.Store.tb_Muestras" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Muestras_Tipo" EntityType="LabDBModel1.Store.tb_Muestras_Tipo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_NotaPedido" EntityType="LabDBModel1.Store.tb_NotaPedido" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_ObraSocial" EntityType="LabDBModel1.Store.tb_ObraSocial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Pacientes" EntityType="LabDBModel1.Store.tb_Pacientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Telefono_x_Donante" EntityType="LabDBModel1.Store.tb_Telefono_x_Donante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Telefono_x_Pacientes" EntityType="LabDBModel1.Store.tb_Telefono_x_Pacientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Telefonos_x_ObraSocial" EntityType="LabDBModel1.Store.tb_Telefonos_x_ObraSocial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_TelefonosTodos" EntityType="LabDBModel1.Store.tb_TelefonosTodos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Tipo_Insumo" EntityType="LabDBModel1.Store.tb_Tipo_Insumo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Usuarios" EntityType="LabDBModel1.Store.tb_Usuarios" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="fk_alarma_insumo_id" Association="LabDBModel1.Store.fk_alarma_insumo_id">
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
+      <End Role="tb_Alarma_x_Insumo" EntitySet="tb_Alarma_x_Insumo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Departamento_Prov" Association="LabDBModel1.Store.FK_Departamento_Prov">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Departamento" EntitySet="Departamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dir_id" Association="LabDBModel1.Store.FK_dir_id">
+      <End Role="tb_DireccionTodos" EntitySet="tb_DireccionTodos" />
+      <End Role="tb_Direccion_x_Medico" EntitySet="tb_Direccion_x_Medico" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dirOs" Association="LabDBModel1.Store.fk_dirOs">
+      <End Role="tb_DireccionObraSocial" EntitySet="tb_DireccionObraSocial" />
+      <End Role="tb_Direccion_x_ObraSocial" EntitySet="tb_Direccion_x_ObraSocial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_donante_id" Association="LabDBModel1.Store.FK_donante_id">
+      <End Role="tb_Donantes" EntitySet="tb_Donantes" />
+      <End Role="tb_Telefono_x_Donante" EntitySet="tb_Telefono_x_Donante" />
+    </AssociationSet>
+    <AssociationSet Name="fk_donante_id_dire" Association="LabDBModel1.Store.fk_donante_id_dire">
+      <End Role="tb_DireccionTodos" EntitySet="tb_DireccionTodos" />
+      <End Role="tb_Direcciones_x_Donante" EntitySet="tb_Direcciones_x_Donante" />
+    </AssociationSet>
+    <AssociationSet Name="fk_donante_id_id" Association="LabDBModel1.Store.fk_donante_id_id">
+      <End Role="tb_Donantes" EntitySet="tb_Donantes" />
+      <End Role="tb_Direcciones_x_Donante" EntitySet="tb_Direcciones_x_Donante" />
+    </AssociationSet>
+    <AssociationSet Name="fk_donate" Association="LabDBModel1.Store.fk_donate">
+      <End Role="tb_Donantes" EntitySet="tb_Donantes" />
+      <End Role="tb_Email_x_donante" EntitySet="tb_Email_x_donante" />
+    </AssociationSet>
+    <AssociationSet Name="fk_email_id" Association="LabDBModel1.Store.fk_email_id">
+      <End Role="tb_EmailsTodos" EntitySet="tb_EmailsTodos" />
+      <End Role="tb_Email_x_donante" EntitySet="tb_Email_x_donante" />
+    </AssociationSet>
+    <AssociationSet Name="fk_emailid" Association="LabDBModel1.Store.fk_emailid">
+      <End Role="tb_EmailsTodos" EntitySet="tb_EmailsTodos" />
+      <End Role="tb_Email_x_Paciente" EntitySet="tb_Email_x_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="fk_gruposanguineo" Association="LabDBModel1.Store.fk_gruposanguineo">
+      <End Role="tb_GrupoSanguineo" EntitySet="tb_GrupoSanguineo" />
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_gruposanguineo_id" Association="LabDBModel1.Store.FK_gruposanguineo_id">
+      <End Role="tb_GrupoSanguineo" EntitySet="tb_GrupoSanguineo" />
+      <End Role="tb_Donantes" EntitySet="tb_Donantes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_idOS" Association="LabDBModel1.Store.fk_idOS">
+      <End Role="tb_ObraSocial" EntitySet="tb_ObraSocial" />
+      <End Role="tb_Direccion_x_ObraSocial" EntitySet="tb_Direccion_x_ObraSocial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Localidad_Departamento" Association="LabDBModel1.Store.FK_Localidad_Departamento">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Localidad" EntitySet="Localidad" />
+    </AssociationSet>
+    <AssociationSet Name="fk_medicoId" Association="LabDBModel1.Store.fk_medicoId">
+      <End Role="tb_Medicos" EntitySet="tb_Medicos" />
+      <End Role="tb_Direccion_x_Medico" EntitySet="tb_Direccion_x_Medico" />
+    </AssociationSet>
+    <AssociationSet Name="fk_obrasocial_contacto" Association="LabDBModel1.Store.fk_obrasocial_contacto">
+      <End Role="tb_ObraSocial" EntitySet="tb_ObraSocial" />
+      <End Role="tb_Contacto_ObraSocial" EntitySet="tb_Contacto_ObraSocial" />
+    </AssociationSet>
+    <AssociationSet Name="fk_os_telefonoxos" Association="LabDBModel1.Store.fk_os_telefonoxos">
+      <End Role="tb_ObraSocial" EntitySet="tb_ObraSocial" />
+      <End Role="tb_Telefonos_x_ObraSocial" EntitySet="tb_Telefonos_x_ObraSocial" />
+    </AssociationSet>
+    <AssociationSet Name="fk_paciente_id" Association="LabDBModel1.Store.fk_paciente_id">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Email_x_Paciente" EntitySet="tb_Email_x_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_paciente_idPaciente" Association="LabDBModel1.Store.FK_paciente_idPaciente">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Telefono_x_Pacientes" EntitySet="tb_Telefono_x_Pacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Alarma_x_Insumo_tb_Alarma_" Association="LabDBModel1.Store.FK_tb_Alarma_x_Insumo_tb_Alarma_">
+      <End Role="tb_Alarmas_Stock" EntitySet="tb_Alarmas_Stock" />
+      <End Role="tb_Alarma_x_Insumo" EntitySet="tb_Alarma_x_Insumo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Enzimologia_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Enzimologia_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Enzimologia" EntitySet="tb_Analisis_Enzimologia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Enzimologia_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Enzimologia_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Enzimologia" EntitySet="tb_Analisis_Enzimologia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Orina_Examen_Fisico_Quimico" EntitySet="tb_Analisis_Orina_Examen_Fisico_Quimico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_OrinaCompleta" Association="LabDBModel1.Store.FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_OrinaCompleta">
+      <End Role="tb_Analisis_Orina_Completa" EntitySet="tb_Analisis_Orina_Completa" />
+      <End Role="tb_Analisis_Orina_Examen_Fisico_Quimico" EntitySet="tb_Analisis_Orina_Examen_Fisico_Quimico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Examen_MateriaFecal" EntitySet="tb_Analisis_Examen_MateriaFecal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Examen_MateriaFecal" EntitySet="tb_Analisis_Examen_MateriaFecal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hemograma_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Hemograma_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Hemograma" EntitySet="tb_Analisis_Hemograma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hemograma_tb_Analisis_estado" Association="LabDBModel1.Store.FK_tb_Analisis_Hemograma_tb_Analisis_estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Hemograma" EntitySet="tb_Analisis_Hemograma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_" Association="LabDBModel1.Store.FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Hemostacia_Coagulacion" EntitySet="tb_Analisis_Hemostacia_Coagulacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Hemostacia_Coagulacion" EntitySet="tb_Analisis_Hemostacia_Coagulacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hepatograma_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Hepatograma_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Hepatograma" EntitySet="tb_Analisis_Hepatograma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hepatograma_tb_Analisis_estado" Association="LabDBModel1.Store.FK_tb_Analisis_Hepatograma_tb_Analisis_estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Hepatograma" EntitySet="tb_Analisis_Hepatograma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hormonas_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Hormonas_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Hormonas" EntitySet="tb_Analisis_Hormonas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Hormonas_tb_Analisis_Est" Association="LabDBModel1.Store.FK_tb_Analisis_Hormonas_tb_Analisis_Est">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Hormonas" EntitySet="tb_Analisis_Hormonas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Inmunoglobulinas_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Inmunoglobulinas_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Inmunoglobulinas" EntitySet="tb_Analisis_Inmunoglobulinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Inmunoglobulinas_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Inmunoglobulinas_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Inmunoglobulinas" EntitySet="tb_Analisis_Inmunoglobulinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Inmunologia_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Inmunologia_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Inmunologia" EntitySet="tb_Analisis_Inmunologia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Inmunologia_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Inmunologia_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Inmunologia" EntitySet="tb_Analisis_Inmunologia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_LipidoGrama_Electroforetico" EntitySet="tb_Analisis_LipidoGrama_Electroforetico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_LipidoGrama_Electroforetico" EntitySet="tb_Analisis_LipidoGrama_Electroforetico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Microbiologico_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Microbiologico_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Microbiologico" EntitySet="tb_Analisis_Microbiologico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Microbiologico_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Microbiologico_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Microbiologico" EntitySet="tb_Analisis_Microbiologico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Estado" Association="LabDBModel1.Store.FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Orina_Complementarios" EntitySet="tb_Analisis_Orina_Complementarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Orina_completa" Association="LabDBModel1.Store.FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Orina_completa">
+      <End Role="tb_Analisis_Orina_Completa" EntitySet="tb_Analisis_Orina_Completa" />
+      <End Role="tb_Analisis_Orina_Complementarios" EntitySet="tb_Analisis_Orina_Complementarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Orina_Completa_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Orina_Completa_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Orina_Completa" EntitySet="tb_Analisis_Orina_Completa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_estado" Association="LabDBModel1.Store.FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_estado">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Orina_Examen_Sedimento" EntitySet="tb_Analisis_Orina_Examen_Sedimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_Orina_Completa" Association="LabDBModel1.Store.FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_Orina_Completa">
+      <End Role="tb_Analisis_Orina_Completa" EntitySet="tb_Analisis_Orina_Completa" />
+      <End Role="tb_Analisis_Orina_Examen_Sedimento" EntitySet="tb_Analisis_Orina_Examen_Sedimento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Proteinograma_Electroforetico_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_Proteinograma_Electroforetico_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Proteinograma_Electroforetico" EntitySet="tb_Analisis_Proteinograma_Electroforetico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_Proteinograma_Electroforetico_tb_EstadoAnalisis" Association="LabDBModel1.Store.FK_tb_Analisis_Proteinograma_Electroforetico_tb_EstadoAnalisis">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Proteinograma_Electroforetico" EntitySet="tb_Analisis_Proteinograma_Electroforetico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_tb_Estado_Analisis" Association="LabDBModel1.Store.FK_tb_Analisis_tb_Estado_Analisis">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Analisis_tb_Paciente" Association="LabDBModel1.Store.FK_tb_Analisis_tb_Paciente">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Compras_tb_NotaPedido" Association="LabDBModel1.Store.FK_tb_Compras_tb_NotaPedido">
+      <End Role="tb_NotaPedido" EntitySet="tb_NotaPedido" />
+      <End Role="tb_Compras" EntitySet="tb_Compras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Diagnosticos_tb_Pacientes" Association="LabDBModel1.Store.FK_tb_Diagnosticos_tb_Pacientes">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Diagnosticos" EntitySet="tb_Diagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Direccion_x_Paciente_tb_DireccionesPaciente" Association="LabDBModel1.Store.FK_tb_Direccion_x_Paciente_tb_DireccionesPaciente">
+      <End Role="tb_DireccionTodos" EntitySet="tb_DireccionTodos" />
+      <End Role="tb_Direccion_x_Paciente" EntitySet="tb_Direccion_x_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Direccion_x_Paciente_tb_Paciente" Association="LabDBModel1.Store.FK_tb_Direccion_x_Paciente_tb_Paciente">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Direccion_x_Paciente" EntitySet="tb_Direccion_x_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DireccionTodos_tb_Localidades" Association="LabDBModel1.Store.FK_tb_DireccionTodos_tb_Localidades">
+      <End Role="Localidad" EntitySet="Localidad" />
+      <End Role="tb_DireccionTodos" EntitySet="tb_DireccionTodos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Factura_tb_Iva" Association="LabDBModel1.Store.FK_tb_Factura_tb_Iva">
+      <End Role="tb_IVA" EntitySet="tb_IVA" />
+      <End Role="tb_Factura" EntitySet="tb_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Factura_tb_Paciente" Association="LabDBModel1.Store.FK_tb_Factura_tb_Paciente">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Factura" EntitySet="tb_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Factura_x_Analisis_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Factura_x_Analisis_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Factura_x_Analisis" EntitySet="tb_Factura_x_Analisis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Factura_x_Analisis_tb_Factura" Association="LabDBModel1.Store.FK_tb_Factura_x_Analisis_tb_Factura">
+      <End Role="tb_Factura" EntitySet="tb_Factura" />
+      <End Role="tb_Factura_x_Analisis" EntitySet="tb_Factura_x_Analisis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_InformeStock_tb_Usuarios" Association="LabDBModel1.Store.FK_tb_InformeStock_tb_Usuarios">
+      <End Role="tb_Usuarios" EntitySet="tb_Usuarios" />
+      <End Role="tb_InformeStock" EntitySet="tb_InformeStock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Insumos_tb_Medida_Insumo" Association="LabDBModel1.Store.FK_tb_Insumos_tb_Medida_Insumo">
+      <End Role="tb_Medida_Insumo" EntitySet="tb_Medida_Insumo" />
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Insumos_tb_TipoInsumo" Association="LabDBModel1.Store.FK_tb_Insumos_tb_TipoInsumo">
+      <End Role="tb_Tipo_Insumo" EntitySet="tb_Tipo_Insumo" />
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock" Association="LabDBModel1.Store.FK_tb_Insumos_x_Informe_Stock_tb_InformeStock">
+      <End Role="tb_InformeStock" EntitySet="tb_InformeStock" />
+      <End Role="tb_Insumos_x_Informe_Stock" EntitySet="tb_Insumos_x_Informe_Stock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos" Association="LabDBModel1.Store.FK_tb_Insumos_x_Informe_Stock_tb_Insumos">
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
+      <End Role="tb_Insumos_x_Informe_Stock" EntitySet="tb_Insumos_x_Informe_Stock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Muestras_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Muestras_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Muestras" EntitySet="tb_Muestras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Muestras_tb_Muestras_Tipo" Association="LabDBModel1.Store.FK_tb_Muestras_tb_Muestras_Tipo">
+      <End Role="tb_Muestras_Tipo" EntitySet="tb_Muestras_Tipo" />
+      <End Role="tb_Muestras" EntitySet="tb_Muestras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Muestras_tb_Paciente" Association="LabDBModel1.Store.FK_tb_Muestras_tb_Paciente">
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+      <End Role="tb_Muestras" EntitySet="tb_Muestras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_NotaPedido_tb_InformeStock" Association="LabDBModel1.Store.FK_tb_NotaPedido_tb_InformeStock">
+      <End Role="tb_InformeStock" EntitySet="tb_InformeStock" />
+      <End Role="tb_NotaPedido" EntitySet="tb_NotaPedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_OS" Association="LabDBModel1.Store.FK_tb_OS">
+      <End Role="tb_ObraSocial" EntitySet="tb_ObraSocial" />
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Pacientes_Medicoid" Association="LabDBModel1.Store.FK_tb_Pacientes_Medicoid">
+      <End Role="tb_Medicos" EntitySet="tb_Medicos" />
+      <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Quimica_Hematica_tb_Analisis" Association="LabDBModel1.Store.FK_tb_Quimica_Hematica_tb_Analisis">
+      <End Role="tb_Analisis" EntitySet="tb_Analisis" />
+      <End Role="tb_Analisis_Quimica_Hematica" EntitySet="tb_Analisis_Quimica_Hematica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Quimica_Hematica_tb_estadoAnalisis" Association="LabDBModel1.Store.FK_tb_Quimica_Hematica_tb_estadoAnalisis">
+      <End Role="tb_Estado_Analisis" EntitySet="tb_Estado_Analisis" />
+      <End Role="tb_Analisis_Quimica_Hematica" EntitySet="tb_Analisis_Quimica_Hematica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Telefono_x_Donante_tb_TelefonosTodos" Association="LabDBModel1.Store.FK_tb_Telefono_x_Donante_tb_TelefonosTodos">
+      <End Role="tb_TelefonosTodos" EntitySet="tb_TelefonosTodos" />
+      <End Role="tb_Telefono_x_Donante" EntitySet="tb_Telefono_x_Donante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Telefonos_x_ObraSocial_tb_TelefonosTodos" Association="LabDBModel1.Store.FK_tb_Telefonos_x_ObraSocial_tb_TelefonosTodos">
+      <End Role="tb_TelefonosTodos" EntitySet="tb_TelefonosTodos" />
+      <End Role="tb_Telefonos_x_ObraSocial" EntitySet="tb_Telefonos_x_ObraSocial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_telefono_id" Association="LabDBModel1.Store.FK_telefono_id">
+      <End Role="tb_TelefonosTodos" EntitySet="tb_TelefonosTodos" />
+      <End Role="tb_Telefono_x_Pacientes" EntitySet="tb_Telefono_x_Pacientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idProvincia" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Localidad">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idDepartamento" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tb_Alarma_x_Insumo">
+    <Key>
+      <PropertyRef Name="id_alarmaxinsumo" />
+    </Key>
+    <Property Name="id_alarmaxinsumo" Type="int" Nullable="false" />
+    <Property Name="alarma_id" Type="int" />
+    <Property Name="insumo_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Alarmas_Stock">
+    <Key>
+      <PropertyRef Name="id_alarma" />
+    </Key>
+    <Property Name="id_alarma" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" />
+    <Property Name="detalle" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_Analisis">
+    <Key>
+      <PropertyRef Name="id_analisis" />
+    </Key>
+    <Property Name="id_analisis" Type="int" Nullable="false" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="fecha_solicitud" Type="date" />
+    <Property Name="fecha_entrega" Type="date" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="medico_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Enzimologia">
+    <Key>
+      <PropertyRef Name="id_enzimologia" />
+    </Key>
+    <Property Name="id_enzimologia" Type="int" Nullable="false" />
+    <Property Name="lipasa" Type="decimal" />
+    <Property Name="amilasa" Type="decimal" />
+    <Property Name="fosfatasa_acida_total" Type="decimal" />
+    <Property Name="fosfatasa_acida_prostatica" Type="decimal" />
+    <Property Name="fosfatasa_alcalina" Type="decimal" />
+    <Property Name="snt" Type="decimal" />
+    <Property Name="ldh" Type="decimal" />
+    <Property Name="cpk" Type="decimal" />
+    <Property Name="gamma_gt" Type="decimal" />
+    <Property Name="got" Type="decimal" />
+    <Property Name="gpt" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Examen_MateriaFecal">
+    <Key>
+      <PropertyRef Name="id_examen_mat_fecal" />
+    </Key>
+    <Property Name="id_examen_mat_fecal" Type="int" Nullable="false" />
+    <Property Name="examen_microsc_directo" Type="varchar" MaxLength="600" />
+    <Property Name="coloracion" Type="varchar" MaxLength="300" />
+    <Property Name="parasitos" Type="varchar" MaxLength="200" />
+    <Property Name="hongos" Type="varchar" MaxLength="200" />
+    <Property Name="fibras" Type="varchar" MaxLength="200" />
+    <Property Name="grasas" Type="varchar" MaxLength="200" />
+    <Property Name="almidon" Type="varchar" MaxLength="200" />
+    <Property Name="celulosa" Type="varchar" MaxLength="200" />
+    <Property Name="leucositos" Type="varchar" MaxLength="200" />
+    <Property Name="hematies" Type="varchar" MaxLength="200" />
+    <Property Name="celulas_epitaliales" Type="varchar" MaxLength="200" />
+    <Property Name="cristales_oxidos_calcio" Type="varchar" MaxLength="200" />
+    <Property Name="cristales_fosfatos" Type="varchar" MaxLength="200" />
+    <Property Name="cristales_charcot_layden" Type="varchar" MaxLength="200" />
+    <Property Name="reconocimiento_de_mucina" Type="varchar" MaxLength="200" />
+    <Property Name="reconocimiento_albuminas_complejas" Type="varchar" MaxLength="200" />
+    <Property Name="reconocimiento_albuminas_integradas" Type="varchar" MaxLength="200" />
+    <Property Name="reconocimiento_peptona" Type="varchar" MaxLength="200" />
+    <Property Name="reconocimiento_sangre_oculta" Type="varchar" MaxLength="200" />
+    <Property Name="ph" Type="varchar" MaxLength="200" />
+    <Property Name="coprocultivo" Type="varchar" MaxLength="200" />
+    <Property Name="gram" Type="varchar" MaxLength="200" />
+    <Property Name="antibiograma" Type="varchar" MaxLength="200" />
+    <Property Name="cultivo" Type="varchar" MaxLength="200" />
+    <Property Name="macroscopico_directo" Type="varchar" MaxLength="200" />
+    <Property Name="microscopico" Type="varchar" MaxLength="200" />
+    <Property Name="seriado_tecnica_vanni" Type="varchar" MaxLength="200" />
+    <Property Name="seriado_tecnica_deschiens" Type="varchar" MaxLength="200" />
+    <Property Name="seriado_carles_barthelemy" Type="varchar" MaxLength="200" />
+    <Property Name="seriado_willis" Type="varchar" MaxLength="200" />
+    <Property Name="seriado_faust" Type="varchar" MaxLength="200" />
+    <Property Name="recuento_huevos" Type="varchar" MaxLength="200" />
+    <Property Name="larvas" Type="varchar" MaxLength="200" />
+    <Property Name="test_graham" Type="varchar" MaxLength="200" />
+    <Property Name="huevos" Type="varchar" MaxLength="200" />
+    <Property Name="trofosoitos" Type="varchar" MaxLength="200" />
+    <Property Name="quistes" Type="varchar" MaxLength="200" />
+    <Property Name="levaduras" Type="varchar" MaxLength="200" />
+    <Property Name="otros" Type="varchar" MaxLength="200" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Hemograma">
+    <Key>
+      <PropertyRef Name="id_hemograma" />
+    </Key>
+    <Property Name="id_hemograma" Type="int" Nullable="false" />
+    <Property Name="globulos_rojos" Type="decimal" />
+    <Property Name="globulos_blancos" Type="decimal" />
+    <Property Name="hematocrito" Type="decimal" />
+    <Property Name="conc_hemoglobina_corpuscular_media" Type="decimal" />
+    <Property Name="volumen_corpuscular_medio" Type="decimal" />
+    <Property Name="hemoglobina_corpuscular_media" Type="decimal" />
+    <Property Name="celulas_juveniles" Type="decimal" />
+    <Property Name="eritrosedimentacion_1rahora" Type="decimal" />
+    <Property Name="eritrosedimentacion_2dahora" Type="decimal" />
+    <Property Name="neutrofilos_encayados_rel" Type="decimal" />
+    <Property Name="neutrofilos_encayados_abs" Type="decimal" />
+    <Property Name="neutrofilos_segmentados_rel" Type="decimal" />
+    <Property Name="neutrofilos_segmentados_abs" Type="decimal" />
+    <Property Name="eosinofilos_rel" Type="decimal" />
+    <Property Name="eosinofilos_abs" Type="decimal" />
+    <Property Name="basofilos_rel" Type="decimal" />
+    <Property Name="basofilos_abs" Type="decimal" />
+    <Property Name="linfositos_rel" Type="decimal" />
+    <Property Name="linfositos_abs" Type="decimal" />
+    <Property Name="monositos_rel" Type="decimal" />
+    <Property Name="monositos_abs" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Hemostacia_Coagulacion">
+    <Key>
+      <PropertyRef Name="id_emostacia_y_coag" />
+    </Key>
+    <Property Name="id_emostacia_y_coag" Type="int" Nullable="false" />
+    <Property Name="recuento_plaquetas" Type="decimal" />
+    <Property Name="tiempo_coagulacion" Type="time" />
+    <Property Name="tiempo_sangria" Type="time" />
+    <Property Name="tiempo_recalcificacion" Type="time" />
+    <Property Name="tiempo_protombina_quick" Type="time" />
+    <Property Name="tiempo_trombina" Type="time" />
+    <Property Name="kptt" Type="decimal" />
+    <Property Name="tiempo_cafeina" Type="time" />
+    <Property Name="tiempo_retraccion_coagulo" Type="time" />
+    <Property Name="fibrinogeno" Type="decimal" />
+    <Property Name="prueba_rumpel_leedle" Type="decimal" />
+    <Property Name="protrombina_residual_serica" Type="decimal" />
+    <Property Name="determinacion_fribrinolisis_fibrinolisina" Type="decimal" />
+    <Property Name="lisis_de_las_euglobinas" Type="decimal" />
+    <Property Name="investig_anticoagulantes" Type="varchar" MaxLength="500" />
+    <Property Name="productos_de_degradacion_fibrinogeno" Type="decimal" />
+    <Property Name="analisis_id" Type="int" />
+    <Property Name="estado_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Hepatograma">
+    <Key>
+      <PropertyRef Name="id_hepatograma" />
+    </Key>
+    <Property Name="id_hepatograma" Type="int" Nullable="false" />
+    <Property Name="got" Type="decimal" />
+    <Property Name="pgt" Type="decimal" />
+    <Property Name="fosfatasa_alcalina" Type="decimal" />
+    <Property Name="colesterol" Type="decimal" />
+    <Property Name="proteinas_totales" Type="decimal" />
+    <Property Name="albumina" Type="decimal" />
+    <Property Name="rel_albumina_globulina" Type="decimal" />
+    <Property Name="bilirrubina_directa" Type="decimal" />
+    <Property Name="bilirrubina_indirecta" Type="decimal" />
+    <Property Name="bilirrubina_total" Type="decimal" />
+    <Property Name="eritrosedimentacion_1rahora" Type="decimal" />
+    <Property Name="eritrosedimentacion_2dahora" Type="decimal" />
+    <Property Name="indice_de_katz" Type="decimal" />
+    <Property Name="uremia" Type="decimal" />
+    <Property Name="glucemia" Type="decimal" />
+    <Property Name="creatinina" Type="decimal" />
+    <Property Name="trigliceridos" Type="decimal" />
+    <Property Name="hdl_col" Type="decimal" />
+    <Property Name="ldl_col" Type="decimal" />
+    <Property Name="gamma_gt" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Hormonas">
+    <Key>
+      <PropertyRef Name="id_hormonas" />
+    </Key>
+    <Property Name="id_hormonas" Type="int" Nullable="false" />
+    <Property Name="hs_pcr" Type="varbinary" MaxLength="150" />
+    <Property Name="cortisol_am" Type="decimal" />
+    <Property Name="cortisol_pm" Type="decimal" />
+    <Property Name="lh" Type="decimal" />
+    <Property Name="testosterona_libre" Type="decimal" />
+    <Property Name="testosterona_total" Type="decimal" />
+    <Property Name="fsh" Type="decimal" />
+    <Property Name="estriadol" Type="decimal" />
+    <Property Name="shbg" Type="decimal" />
+    <Property Name="psa" Type="decimal" />
+    <Property Name="cea" Type="decimal" />
+    <Property Name="helicobacter_pilori" Type="varchar" MaxLength="150" />
+    <Property Name="prolactina" Type="decimal" />
+    <Property Name="testosterona" Type="decimal" />
+    <Property Name="t3" Type="decimal" />
+    <Property Name="t4_total" Type="decimal" />
+    <Property Name="tsh" Type="decimal" />
+    <Property Name="test_tolerancia_glucosa_v1" Type="decimal" />
+    <Property Name="test_tolerancia_glucosa_v2" Type="decimal" />
+    <Property Name="test_tolerancia_glucosa_v3" Type="decimal" />
+    <Property Name="test_tolerancia_glucosa_v4" Type="decimal" />
+    <Property Name="cetoesteroides_neutros_urinarios" Type="varchar" MaxLength="150" />
+    <Property Name="alfa_fetoproteina" Type="decimal" />
+    <Property Name="estrogenos_totales" Type="decimal" />
+    <Property Name="estriol" Type="decimal" />
+    <Property Name="estrona" Type="decimal" />
+    <Property Name="pregnandriol" Type="decimal" />
+    <Property Name="pregnantriol" Type="decimal" />
+    <Property Name="progesterona" Type="decimal" />
+    <Property Name="analisis_id" Type="int" />
+    <Property Name="estado_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Inmunoglobulinas">
+    <Key>
+      <PropertyRef Name="id_inmunoglobulinas" />
+    </Key>
+    <Property Name="id_inmunoglobulinas" Type="int" Nullable="false" />
+    <Property Name="globulina_gamma_g" Type="decimal" />
+    <Property Name="globulina_gamma_a" Type="decimal" />
+    <Property Name="globulina_gamma_m" Type="decimal" />
+    <Property Name="globulina_gamma_d" Type="decimal" />
+    <Property Name="globulina_gamma_e" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Inmunologia">
+    <Key>
+      <PropertyRef Name="id_inmunologia" />
+    </Key>
+    <Property Name="id_inmunologia" Type="int" Nullable="false" />
+    <Property Name="reaccion_widall_antigeno_h" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_widall_antigeno_o" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_widall_paratifis_a" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_widall_paratifis_b" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_hudlesson_cualitativa" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_hudlesson_cuantitativa" Type="varchar" MaxLength="100" />
+    <Property Name="vdrl_cualitativa" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_wasserman_fta_abs" Type="varchar" MaxLength="100" />
+    <Property Name="chagas_hai_con_2me" Type="varchar" MaxLength="100" />
+    <Property Name="chagas_hai_sin_2me" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoperoxidasa" Type="varchar" MaxLength="100" />
+    <Property Name="tif" Type="varchar" MaxLength="100" />
+    <Property Name="taxoplasmosis_hai_con_2me" Type="varchar" MaxLength="100" />
+    <Property Name="taxoplasmosis_hai_sin_2me" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_monoclonales" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoperoxidasas" Type="varchar" MaxLength="100" />
+    <Property Name="tif_igm" Type="varchar" MaxLength="100" />
+    <Property Name="citomegalovirus_igg" Type="varchar" MaxLength="100" />
+    <Property Name="citomegalovirus_igm" Type="varchar" MaxLength="100" />
+    <Property Name="hiv_metodo_elisa" Type="varchar" MaxLength="100" />
+    <Property Name="rubeola_igg" Type="varchar" MaxLength="100" />
+    <Property Name="rubeola_igm" Type="varchar" MaxLength="100" />
+    <Property Name="brucelosis_wright" Type="varchar" MaxLength="100" />
+    <Property Name="brucelosis_hudlesson" Type="varchar" MaxLength="100" />
+    <Property Name="anti_hvc_hepatitis_metodo_elisa" Type="varchar" MaxLength="100" />
+    <Property Name="hbs_ag_metodo_elisa" Type="varchar" MaxLength="100" />
+    <Property Name="core_igm" Type="varchar" MaxLength="100" />
+    <Property Name="igm_anti_a" Type="varchar" MaxLength="100" />
+    <Property Name="eppstein_barr_igg" Type="varchar" MaxLength="100" />
+    <Property Name="eppstein_barr_igm" Type="varchar" MaxLength="100" />
+    <Property Name="monotest" Type="varchar" MaxLength="100" />
+    <Property Name="met_aglutinacion_especifica" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_waler_rose_ragan" Type="varchar" MaxLength="100" />
+    <Property Name="aslo" Type="decimal" />
+    <Property Name="artritest_igm" Type="varchar" MaxLength="100" />
+    <Property Name="artritest_pcr" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_weill_felix" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_compatibilidad_cruzada" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_complemento_c3" Type="varchar" MaxLength="100" />
+    <Property Name="celulas_le" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_cooms_directa" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion_cooms_indirecta" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_asma" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_ama" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_fan_ana" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_anca" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_dna" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_la" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_rnp" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_ro" Type="varchar" MaxLength="100" />
+    <Property Name="anticuerpos_ata" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoglobulinas_igA" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoglobulinas_igG" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoglobulinas_igE" Type="varchar" MaxLength="100" />
+    <Property Name="inmunoglobulinas_igD" Type="varchar" MaxLength="100" />
+    <Property Name="helicobacter_pylori" Type="varchar" MaxLength="100" />
+    <Property Name="hidatidosis" Type="varchar" MaxLength="100" />
+    <Property Name="complemento_met_inmuno_difusion_radial_c3" Type="varchar" MaxLength="100" />
+    <Property Name="complemento_met_inmuno_difusion_radial_c4" Type="varchar" MaxLength="100" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_LipidoGrama_Electroforetico">
+    <Key>
+      <PropertyRef Name="id_lipidograma_electrof" />
+    </Key>
+    <Property Name="id_lipidograma_electrof" Type="int" Nullable="false" />
+    <Property Name="alfa_lipoproteinas" Type="decimal" />
+    <Property Name="probeta_lipoproteinas" Type="decimal" />
+    <Property Name="beta_lipoproteinas" Type="decimal" />
+    <Property Name="quilomicrones" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Microbiologico">
+    <Key>
+      <PropertyRef Name="id_analisis_microbiologico" />
+    </Key>
+    <Property Name="id_analisis_microbiologico" Type="int" Nullable="false" />
+    <Property Name="coloracion_de_graham" Type="varchar" MaxLength="50" />
+    <Property Name="ziehl_nielsen_baar" Type="decimal" />
+    <Property Name="mggp" Type="decimal" />
+    <Property Name="cultivo" Type="varchar" MaxLength="100" />
+    <Property Name="recuento_de_colonias" Type="varchar" MaxLength="100" />
+    <Property Name="antibiograma" Type="varchar" MaxLength="100" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Orina_Complementarios">
+    <Key>
+      <PropertyRef Name="id_orina_complement" />
+    </Key>
+    <Property Name="id_orina_complement" Type="int" Nullable="false" />
+    <Property Name="moluria" Type="decimal" />
+    <Property Name="cloruros_natruria_potasuria" Type="decimal" />
+    <Property Name="sodio" Type="decimal" />
+    <Property Name="potasio" Type="decimal" />
+    <Property Name="fosforo" Type="decimal" />
+    <Property Name="calcio" Type="decimal" />
+    <Property Name="urea" Type="decimal" />
+    <Property Name="acido_urico" Type="decimal" />
+    <Property Name="proteinas" Type="decimal" />
+    <Property Name="acido_homogentisico_oxidasa" Type="decimal" />
+    <Property Name="proteinas_bencejones" Type="decimal" />
+    <Property Name="creatinina" Type="decimal" />
+    <Property Name="oxalato_calcico" Type="decimal" />
+    <Property Name="lipidos" Type="decimal" />
+    <Property Name="volumen_total" Type="decimal" />
+    <Property Name="recuento_addis_hematies" Type="decimal" />
+    <Property Name="recuento_addis_leucositos" Type="decimal" />
+    <Property Name="recuento_addis_cilindros" Type="decimal" />
+    <Property Name="rto_cuantitativo_elem_figurados_totales_hematies" Type="decimal" />
+    <Property Name="rto_cuantitativo_elem_figurados_totales_leucositos" Type="decimal" />
+    <Property Name="rto_cuantitativo_elem_figurados_totales_cilindros_hialinos" Type="decimal" />
+    <Property Name="examen_orina_id" Type="int" />
+    <Property Name="estado_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Orina_Completa">
+    <Key>
+      <PropertyRef Name="id_orina_completa" />
+    </Key>
+    <Property Name="id_orina_completa" Type="int" Nullable="false" />
+    <Property Name="analisis_id" Type="int" />
+    <Property Name="estado_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Orina_Examen_Fisico_Quimico">
+    <Key>
+      <PropertyRef Name="id_examen_fisico_quimico" />
+    </Key>
+    <Property Name="id_examen_fisico_quimico" Type="int" Nullable="false" />
+    <Property Name="color" Type="varchar" MaxLength="100" />
+    <Property Name="aspecto" Type="varchar" MaxLength="100" />
+    <Property Name="densidad" Type="varchar" MaxLength="100" />
+    <Property Name="sed_macroscopico" Type="varchar" MaxLength="100" />
+    <Property Name="reaccion" Type="varchar" MaxLength="100" />
+    <Property Name="ph" Type="varchar" MaxLength="100" />
+    <Property Name="espuma" Type="varchar" MaxLength="100" />
+    <Property Name="proteina" Type="varchar" MaxLength="100" />
+    <Property Name="glucosa" Type="varchar" MaxLength="100" />
+    <Property Name="acetona" Type="varchar" MaxLength="100" />
+    <Property Name="pigmentos_biliares" Type="varchar" MaxLength="100" />
+    <Property Name="sales_biliares" Type="varchar" MaxLength="100" />
+    <Property Name="urobilina" Type="varchar" MaxLength="100" />
+    <Property Name="hemoglobina" Type="varchar" MaxLength="100" />
+    <Property Name="examen_orina_id" Type="int" />
+    <Property Name="estado_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Orina_Examen_Sedimento">
+    <Key>
+      <PropertyRef Name="id_orina_examen_sed" />
+    </Key>
+    <Property Name="id_orina_examen_sed" Type="int" Nullable="false" />
+    <Property Name="cel_descamacion_epitalial" Type="varchar" MaxLength="100" />
+    <Property Name="leucosios" Type="varchar" MaxLength="100" />
+    <Property Name="piocitos" Type="varchar" MaxLength="100" />
+    <Property Name="hematies" Type="varchar" MaxLength="100" />
+    <Property Name="cilindros" Type="varchar" MaxLength="100" />
+    <Property Name="filamentos_mucoides" Type="varchar" MaxLength="100" />
+    <Property Name="cristales" Type="varchar" MaxLength="100" />
+    <Property Name="hongos" Type="varchar" MaxLength="100" />
+    <Property Name="bacterias" Type="varchar" MaxLength="100" />
+    <Property Name="parasitos" Type="varchar" MaxLength="100" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="examen_orina_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Proteinograma_Electroforetico">
+    <Key>
+      <PropertyRef Name="id_proteinograma_electrof" />
+    </Key>
+    <Property Name="id_proteinograma_electrof" Type="int" Nullable="false" />
+    <Property Name="albumina" Type="decimal" />
+    <Property Name="globulina" Type="decimal" />
+    <Property Name="coheficiente_albumina_globulina" Type="decimal" />
+    <Property Name="alfaglobulina" Type="decimal" />
+    <Property Name="alfa1globulina" Type="decimal" />
+    <Property Name="alfa2globulina" Type="decimal" />
+    <Property Name="betaglobulina" Type="decimal" />
+    <Property Name="gammaglobullina" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Analisis_Quimica_Hematica">
+    <Key>
+      <PropertyRef Name="id_quimica_hematica" />
+    </Key>
+    <Property Name="id_quimica_hematica" Type="int" Nullable="false" />
+    <Property Name="glucemia" Type="decimal" />
+    <Property Name="uremia" Type="decimal" />
+    <Property Name="uricemia" Type="decimal" />
+    <Property Name="creatininemia" Type="decimal" />
+    <Property Name="trigliceridos" Type="decimal" />
+    <Property Name="colesterol" Type="decimal" />
+    <Property Name="hdl_colesterol" Type="decimal" />
+    <Property Name="ind_aterocidad_cociente_ldhcol_hdl_col" Type="decimal" />
+    <Property Name="ind_aterocidad_cociente_col_total_hdl" Type="decimal" />
+    <Property Name="lipido_total" Type="decimal" />
+    <Property Name="fosfatemia" Type="decimal" />
+    <Property Name="magnesemia" Type="decimal" />
+    <Property Name="calcemia" Type="decimal" />
+    <Property Name="cloremia" Type="decimal" />
+    <Property Name="ferremia" Type="decimal" />
+    <Property Name="hemoglobina_glicosilada" Type="decimal" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Compras">
+    <Key>
+      <PropertyRef Name="id_compra" />
+    </Key>
+    <Property Name="id_compra" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="detalle" Type="varchar" MaxLength="600" />
+    <Property Name="notapedido_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Contacto_ObraSocial">
+    <Key>
+      <PropertyRef Name="id_contacto" />
+    </Key>
+    <Property Name="id_contacto" Type="int" Nullable="false" />
+    <Property Name="obra_social_id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="cargo" Type="varchar" MaxLength="100" />
+    <Property Name="email1" Type="varchar" MaxLength="100" />
+    <Property Name="email2" Type="varchar" MaxLength="100" />
+    <Property Name="telefono1" Type="varchar" MaxLength="100" />
+    <Property Name="telefono2" Type="varchar" MaxLength="100" />
+    <Property Name="celular" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Diagnosticos">
+    <Key>
+      <PropertyRef Name="id_diagnostico" />
+    </Key>
+    <Property Name="id_diagnostico" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="descripcion" Type="text" />
+    <Property Name="fecha" Type="date" />
+  </EntityType>
+  <EntityType Name="tb_Direccion_x_Medico">
+    <Key>
+      <PropertyRef Name="id_dir_x_medico" />
+    </Key>
+    <Property Name="id_dir_x_medico" Type="int" Nullable="false" />
+    <Property Name="medico_id" Type="int" />
+    <Property Name="direccion_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Direccion_x_ObraSocial">
+    <Key>
+      <PropertyRef Name="id_dir" />
+    </Key>
+    <Property Name="id_dir" Type="int" Nullable="false" />
+    <Property Name="obra_social_id" Type="int" />
+    <Property Name="direccion_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Direccion_x_Paciente">
+    <Key>
+      <PropertyRef Name="id_direccion" />
+    </Key>
+    <Property Name="id_direccion" Type="int" Nullable="false" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="direccion_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Direcciones_x_Donante">
+    <Key>
+      <PropertyRef Name="id_direccion_x_donante" />
+    </Key>
+    <Property Name="id_direccion_x_donante" Type="int" Nullable="false" />
+    <Property Name="direccion_id" Type="int" />
+    <Property Name="donante_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_DireccionObraSocial">
+    <Key>
+      <PropertyRef Name="id_direccion" />
+    </Key>
+    <Property Name="id_direccion" Type="int" Nullable="false" />
+    <Property Name="calle" Type="varchar" MaxLength="200" />
+    <Property Name="barrio" Type="varchar" MaxLength="200" />
+    <Property Name="provincia" Type="int" />
+    <Property Name="localidad" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_DireccionTodos">
+    <Key>
+      <PropertyRef Name="id_dir" />
+    </Key>
+    <Property Name="id_dir" Type="int" Nullable="false" />
+    <Property Name="calle" Type="varchar" MaxLength="150" />
+    <Property Name="numero" Type="int" />
+    <Property Name="barrio" Type="int" />
+    <Property Name="localidad_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Donantes">
+    <Key>
+      <PropertyRef Name="id_donante" />
+    </Key>
+    <Property Name="id_donante" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="dni" Type="int" />
+    <Property Name="grupo_sanguineo_id" Type="int" />
+    <Property Name="fecha_alta" Type="date" />
+    <Property Name="fecha_nacimiento" Type="date" />
+  </EntityType>
+  <EntityType Name="tb_Email_x_donante">
+    <Key>
+      <PropertyRef Name="id_email_x_donante" />
+    </Key>
+    <Property Name="id_email_x_donante" Type="int" Nullable="false" />
+    <Property Name="email_id" Type="int" />
+    <Property Name="donante_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Email_x_Paciente">
+    <Key>
+      <PropertyRef Name="id_email_x_paciente" />
+    </Key>
+    <Property Name="id_email_x_paciente" Type="int" Nullable="false" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="email_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_EmailsTodos">
+    <Key>
+      <PropertyRef Name="id_email" />
+    </Key>
+    <Property Name="id_email" Type="int" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_Estado_Analisis">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="int" Nullable="false" />
+    <Property Name="detalles" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_Factura">
+    <Key>
+      <PropertyRef Name="id_factura" />
+    </Key>
+    <Property Name="id_factura" Type="int" Nullable="false" />
+    <Property Name="tipo" Type="int" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="subtotal" Type="decimal" />
+    <Property Name="total" Type="decimal" />
+    <Property Name="iva_id" Type="int" />
+    <Property Name="fecha" Type="date" />
+  </EntityType>
+  <EntityType Name="tb_Factura_x_Analisis">
+    <Key>
+      <PropertyRef Name="id_factura_x_paciente" />
+    </Key>
+    <Property Name="id_factura_x_paciente" Type="int" Nullable="false" />
+    <Property Name="factura_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_GrupoSanguineo">
+    <Key>
+      <PropertyRef Name="id_grupo" />
+    </Key>
+    <Property Name="id_grupo" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_InformeStock">
+    <Key>
+      <PropertyRef Name="id_infome_stock" />
+    </Key>
+    <Property Name="id_infome_stock" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="detalles" Type="text" />
+    <Property Name="responsable_id" Type="int" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Insumos">
+    <Key>
+      <PropertyRef Name="id_insumo" />
+    </Key>
+    <Property Name="id_insumo" Type="int" Nullable="false" />
+    <Property Name="detalle" Type="varchar" MaxLength="200" />
+    <Property Name="laboratorio_marca" Type="int" />
+    <Property Name="nombre_prod" Type="varchar" MaxLength="200" />
+    <Property Name="cant_minima" Type="int" />
+    <Property Name="medida" Type="int" />
+    <Property Name="precio_unidad" Type="decimal" />
+    <Property Name="cant_disponible" Type="int" />
+    <Property Name="tipo_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Insumos_x_Informe_Stock">
+    <Key>
+      <PropertyRef Name="id_ins_x_inf" />
+    </Key>
+    <Property Name="id_ins_x_inf" Type="int" Nullable="false" />
+    <Property Name="insumo_id" Type="int" />
+    <Property Name="informe_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_IVA">
+    <Key>
+      <PropertyRef Name="id_iva" />
+    </Key>
+    <Property Name="id_iva" Type="int" Nullable="false" />
+    <Property Name="detalle" Type="varchar" MaxLength="100" />
+    <Property Name="monto" Type="decimal" />
+  </EntityType>
+  <EntityType Name="tb_Medicos">
+    <Key>
+      <PropertyRef Name="id_medico" />
+    </Key>
+    <Property Name="id_medico" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="dni" Type="int" />
+    <Property Name="especialidad" Type="int" />
+    <Property Name="email1" Type="varchar" MaxLength="50" />
+    <Property Name="email2" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Medida_Insumo">
+    <Key>
+      <PropertyRef Name="id_medida" />
+    </Key>
+    <Property Name="id_medida" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Muestras">
+    <Key>
+      <PropertyRef Name="id_muestra" />
+    </Key>
+    <Property Name="id_muestra" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="fecha_extraccion" Type="date" />
+    <Property Name="tipo_id" Type="int" />
+    <Property Name="analisis_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Muestras_Tipo">
+    <Key>
+      <PropertyRef Name="id_muestras_tipo" />
+    </Key>
+    <Property Name="id_muestras_tipo" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_NotaPedido">
+    <Key>
+      <PropertyRef Name="id_nota_pedido" />
+    </Key>
+    <Property Name="id_nota_pedido" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="informeStock_id" Type="int" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ObraSocial">
+    <Key>
+      <PropertyRef Name="id_obra_social" />
+    </Key>
+    <Property Name="id_obra_social" Type="int" Nullable="false" />
+    <Property Name="razon_social" Type="varchar" MaxLength="150" />
+    <Property Name="website1" Type="varchar" MaxLength="100" />
+    <Property Name="website2" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_Pacientes">
+    <Key>
+      <PropertyRef Name="id_paciente" />
+    </Key>
+    <Property Name="id_paciente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="dni" Type="int" />
+    <Property Name="grupo_sanguineo" Type="int" />
+    <Property Name="fecha_alta" Type="date" />
+    <Property Name="fecha_nacimiento" Type="date" />
+    <Property Name="obra_social_id" Type="int" />
+    <Property Name="medico_id" Type="int" />
+    <Property Name="es_donante" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Telefono_x_Donante">
+    <Key>
+      <PropertyRef Name="id_tel_x_donante" />
+    </Key>
+    <Property Name="id_tel_x_donante" Type="int" Nullable="false" />
+    <Property Name="donante_id" Type="int" />
+    <Property Name="telefono_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Telefono_x_Pacientes">
+    <Key>
+      <PropertyRef Name="id_telefono_x_paciente" />
+    </Key>
+    <Property Name="id_telefono_x_paciente" Type="int" Nullable="false" />
+    <Property Name="paciente_id" Type="int" />
+    <Property Name="telefono_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Telefonos_x_ObraSocial">
+    <Key>
+      <PropertyRef Name="id_telefono_x_os" />
+    </Key>
+    <Property Name="id_telefono_x_os" Type="int" Nullable="false" />
+    <Property Name="telefono_id" Type="int" />
+    <Property Name="obra_social_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_TelefonosTodos">
+    <Key>
+      <PropertyRef Name="id_telefono" />
+    </Key>
+    <Property Name="id_telefono" Type="int" Nullable="false" />
+    <Property Name="telefono" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_Tipo_Insumo">
+    <Key>
+      <PropertyRef Name="id_tipo_insumo" />
+    </Key>
+    <Property Name="id_tipo_insumo" Type="int" Nullable="false" />
+    <Property Name="detalles" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_Usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" />
+    <Property Name="cargo" Type="varchar" MaxLength="100" />
+    <Property Name="permisos" Type="int" />
+    <Property Name="fecha_alta" Type="date" />
+    <Property Name="ultimo_acceso" Type="date" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="telefono" Type="varchar" MaxLength="50" />
+    <Property Name="telefono2" Type="varchar" MaxLength="50" />
+    <Property Name="email2" Type="varchar" MaxLength="50" />
+    <Property Name="direccion" Type="varchar" MaxLength="50" />
+    <Property Name="direccion2" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="fk_alarma_insumo_id">
+    <End Role="tb_Insumos" Type="LabDBModel1.Store.tb_Insumos" Multiplicity="0..1" />
+    <End Role="tb_Alarma_x_Insumo" Type="LabDBModel1.Store.tb_Alarma_x_Insumo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Insumos">
+        <PropertyRef Name="id_insumo" />
+      </Principal>
+      <Dependent Role="tb_Alarma_x_Insumo">
+        <PropertyRef Name="insumo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Departamento_Prov">
+    <End Role="Provincia" Type="LabDBModel1.Store.Provincia" Multiplicity="1" />
+    <End Role="Departamento" Type="LabDBModel1.Store.Departamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Departamento">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dir_id">
+    <End Role="tb_DireccionTodos" Type="LabDBModel1.Store.tb_DireccionTodos" Multiplicity="0..1" />
+    <End Role="tb_Direccion_x_Medico" Type="LabDBModel1.Store.tb_Direccion_x_Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DireccionTodos">
+        <PropertyRef Name="id_dir" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_Medico">
+        <PropertyRef Name="direccion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dirOs">
+    <End Role="tb_DireccionObraSocial" Type="LabDBModel1.Store.tb_DireccionObraSocial" Multiplicity="0..1" />
+    <End Role="tb_Direccion_x_ObraSocial" Type="LabDBModel1.Store.tb_Direccion_x_ObraSocial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DireccionObraSocial">
+        <PropertyRef Name="id_direccion" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_ObraSocial">
+        <PropertyRef Name="direccion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_donante_id">
+    <End Role="tb_Donantes" Type="LabDBModel1.Store.tb_Donantes" Multiplicity="0..1" />
+    <End Role="tb_Telefono_x_Donante" Type="LabDBModel1.Store.tb_Telefono_x_Donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Donantes">
+        <PropertyRef Name="id_donante" />
+      </Principal>
+      <Dependent Role="tb_Telefono_x_Donante">
+        <PropertyRef Name="donante_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_donante_id_dire">
+    <End Role="tb_DireccionTodos" Type="LabDBModel1.Store.tb_DireccionTodos" Multiplicity="0..1" />
+    <End Role="tb_Direcciones_x_Donante" Type="LabDBModel1.Store.tb_Direcciones_x_Donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DireccionTodos">
+        <PropertyRef Name="id_dir" />
+      </Principal>
+      <Dependent Role="tb_Direcciones_x_Donante">
+        <PropertyRef Name="direccion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_donante_id_id">
+    <End Role="tb_Donantes" Type="LabDBModel1.Store.tb_Donantes" Multiplicity="0..1" />
+    <End Role="tb_Direcciones_x_Donante" Type="LabDBModel1.Store.tb_Direcciones_x_Donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Donantes">
+        <PropertyRef Name="id_donante" />
+      </Principal>
+      <Dependent Role="tb_Direcciones_x_Donante">
+        <PropertyRef Name="donante_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_donate">
+    <End Role="tb_Donantes" Type="LabDBModel1.Store.tb_Donantes" Multiplicity="0..1" />
+    <End Role="tb_Email_x_donante" Type="LabDBModel1.Store.tb_Email_x_donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Donantes">
+        <PropertyRef Name="id_donante" />
+      </Principal>
+      <Dependent Role="tb_Email_x_donante">
+        <PropertyRef Name="donante_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_email_id">
+    <End Role="tb_EmailsTodos" Type="LabDBModel1.Store.tb_EmailsTodos" Multiplicity="0..1" />
+    <End Role="tb_Email_x_donante" Type="LabDBModel1.Store.tb_Email_x_donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_EmailsTodos">
+        <PropertyRef Name="id_email" />
+      </Principal>
+      <Dependent Role="tb_Email_x_donante">
+        <PropertyRef Name="email_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_emailid">
+    <End Role="tb_EmailsTodos" Type="LabDBModel1.Store.tb_EmailsTodos" Multiplicity="0..1" />
+    <End Role="tb_Email_x_Paciente" Type="LabDBModel1.Store.tb_Email_x_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_EmailsTodos">
+        <PropertyRef Name="id_email" />
+      </Principal>
+      <Dependent Role="tb_Email_x_Paciente">
+        <PropertyRef Name="email_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_gruposanguineo">
+    <End Role="tb_GrupoSanguineo" Type="LabDBModel1.Store.tb_GrupoSanguineo" Multiplicity="0..1" />
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_GrupoSanguineo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tb_Pacientes">
+        <PropertyRef Name="grupo_sanguineo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_gruposanguineo_id">
+    <End Role="tb_GrupoSanguineo" Type="LabDBModel1.Store.tb_GrupoSanguineo" Multiplicity="0..1" />
+    <End Role="tb_Donantes" Type="LabDBModel1.Store.tb_Donantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_GrupoSanguineo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tb_Donantes">
+        <PropertyRef Name="grupo_sanguineo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_idOS">
+    <End Role="tb_ObraSocial" Type="LabDBModel1.Store.tb_ObraSocial" Multiplicity="0..1" />
+    <End Role="tb_Direccion_x_ObraSocial" Type="LabDBModel1.Store.tb_Direccion_x_ObraSocial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ObraSocial">
+        <PropertyRef Name="id_obra_social" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_ObraSocial">
+        <PropertyRef Name="obra_social_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Localidad_Departamento">
+    <End Role="Departamento" Type="LabDBModel1.Store.Departamento" Multiplicity="1" />
+    <End Role="Localidad" Type="LabDBModel1.Store.Localidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Localidad">
+        <PropertyRef Name="idDepartamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_medicoId">
+    <End Role="tb_Medicos" Type="LabDBModel1.Store.tb_Medicos" Multiplicity="0..1" />
+    <End Role="tb_Direccion_x_Medico" Type="LabDBModel1.Store.tb_Direccion_x_Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Medicos">
+        <PropertyRef Name="id_medico" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_Medico">
+        <PropertyRef Name="medico_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_obrasocial_contacto">
+    <End Role="tb_ObraSocial" Type="LabDBModel1.Store.tb_ObraSocial" Multiplicity="1" />
+    <End Role="tb_Contacto_ObraSocial" Type="LabDBModel1.Store.tb_Contacto_ObraSocial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ObraSocial">
+        <PropertyRef Name="id_obra_social" />
+      </Principal>
+      <Dependent Role="tb_Contacto_ObraSocial">
+        <PropertyRef Name="obra_social_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_os_telefonoxos">
+    <End Role="tb_ObraSocial" Type="LabDBModel1.Store.tb_ObraSocial" Multiplicity="0..1" />
+    <End Role="tb_Telefonos_x_ObraSocial" Type="LabDBModel1.Store.tb_Telefonos_x_ObraSocial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ObraSocial">
+        <PropertyRef Name="id_obra_social" />
+      </Principal>
+      <Dependent Role="tb_Telefonos_x_ObraSocial">
+        <PropertyRef Name="obra_social_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_paciente_id">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Email_x_Paciente" Type="LabDBModel1.Store.tb_Email_x_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Email_x_Paciente">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_paciente_idPaciente">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Telefono_x_Pacientes" Type="LabDBModel1.Store.tb_Telefono_x_Pacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Telefono_x_Pacientes">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Alarma_x_Insumo_tb_Alarma_">
+    <End Role="tb_Alarmas_Stock" Type="LabDBModel1.Store.tb_Alarmas_Stock" Multiplicity="0..1" />
+    <End Role="tb_Alarma_x_Insumo" Type="LabDBModel1.Store.tb_Alarma_x_Insumo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Alarmas_Stock">
+        <PropertyRef Name="id_alarma" />
+      </Principal>
+      <Dependent Role="tb_Alarma_x_Insumo">
+        <PropertyRef Name="alarma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Enzimologia_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Enzimologia" Type="LabDBModel1.Store.tb_Analisis_Enzimologia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Enzimologia">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Enzimologia_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Enzimologia" Type="LabDBModel1.Store.tb_Analisis_Enzimologia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Enzimologia">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Examen_Fisico_Quimico" Type="LabDBModel1.Store.tb_Analisis_Orina_Examen_Fisico_Quimico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Examen_Fisico_Quimico">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Examen_Fisico_Quimico_tb_Analisis_OrinaCompleta">
+    <End Role="tb_Analisis_Orina_Completa" Type="LabDBModel1.Store.tb_Analisis_Orina_Completa" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Examen_Fisico_Quimico" Type="LabDBModel1.Store.tb_Analisis_Orina_Examen_Fisico_Quimico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis_Orina_Completa">
+        <PropertyRef Name="id_orina_completa" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Examen_Fisico_Quimico">
+        <PropertyRef Name="examen_orina_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Examen_MateriaFecal" Type="LabDBModel1.Store.tb_Analisis_Examen_MateriaFecal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Examen_MateriaFecal">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Examen_MateriaFecal_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Examen_MateriaFecal" Type="LabDBModel1.Store.tb_Analisis_Examen_MateriaFecal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Examen_MateriaFecal">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hemograma_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hemograma" Type="LabDBModel1.Store.tb_Analisis_Hemograma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hemograma">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hemograma_tb_Analisis_estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hemograma" Type="LabDBModel1.Store.tb_Analisis_Hemograma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hemograma">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hemostacia_Coagulacion" Type="LabDBModel1.Store.tb_Analisis_Hemostacia_Coagulacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hemostacia_Coagulacion">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hemostacia_Coagulacion_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hemostacia_Coagulacion" Type="LabDBModel1.Store.tb_Analisis_Hemostacia_Coagulacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hemostacia_Coagulacion">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hepatograma_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hepatograma" Type="LabDBModel1.Store.tb_Analisis_Hepatograma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hepatograma">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hepatograma_tb_Analisis_estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hepatograma" Type="LabDBModel1.Store.tb_Analisis_Hepatograma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hepatograma">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hormonas_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hormonas" Type="LabDBModel1.Store.tb_Analisis_Hormonas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hormonas">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Hormonas_tb_Analisis_Est">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Hormonas" Type="LabDBModel1.Store.tb_Analisis_Hormonas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Hormonas">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Inmunoglobulinas_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Inmunoglobulinas" Type="LabDBModel1.Store.tb_Analisis_Inmunoglobulinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Inmunoglobulinas">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Inmunoglobulinas_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Inmunoglobulinas" Type="LabDBModel1.Store.tb_Analisis_Inmunoglobulinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Inmunoglobulinas">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Inmunologia_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Inmunologia" Type="LabDBModel1.Store.tb_Analisis_Inmunologia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Inmunologia">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Inmunologia_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Inmunologia" Type="LabDBModel1.Store.tb_Analisis_Inmunologia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Inmunologia">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_LipidoGrama_Electroforetico" Type="LabDBModel1.Store.tb_Analisis_LipidoGrama_Electroforetico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_LipidoGrama_Electroforetico">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_LipidoGrama_Electroforetico_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_LipidoGrama_Electroforetico" Type="LabDBModel1.Store.tb_Analisis_LipidoGrama_Electroforetico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_LipidoGrama_Electroforetico">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Microbiologico_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Microbiologico" Type="LabDBModel1.Store.tb_Analisis_Microbiologico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Microbiologico">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Microbiologico_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Microbiologico" Type="LabDBModel1.Store.tb_Analisis_Microbiologico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Microbiologico">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Complementarios" Type="LabDBModel1.Store.tb_Analisis_Orina_Complementarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Complementarios">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Orina_Complementarios_tb_Analisis_Orina_completa">
+    <End Role="tb_Analisis_Orina_Completa" Type="LabDBModel1.Store.tb_Analisis_Orina_Completa" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Complementarios" Type="LabDBModel1.Store.tb_Analisis_Orina_Complementarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis_Orina_Completa">
+        <PropertyRef Name="id_orina_completa" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Complementarios">
+        <PropertyRef Name="examen_orina_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Orina_Completa_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Completa" Type="LabDBModel1.Store.tb_Analisis_Orina_Completa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Completa">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_estado">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Examen_Sedimento" Type="LabDBModel1.Store.tb_Analisis_Orina_Examen_Sedimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Examen_Sedimento">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Orina_Examen_Sedimento_tb_Analisis_Orina_Completa">
+    <End Role="tb_Analisis_Orina_Completa" Type="LabDBModel1.Store.tb_Analisis_Orina_Completa" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Orina_Examen_Sedimento" Type="LabDBModel1.Store.tb_Analisis_Orina_Examen_Sedimento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis_Orina_Completa">
+        <PropertyRef Name="id_orina_completa" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Orina_Examen_Sedimento">
+        <PropertyRef Name="examen_orina_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Proteinograma_Electroforetico_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Proteinograma_Electroforetico" Type="LabDBModel1.Store.tb_Analisis_Proteinograma_Electroforetico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Proteinograma_Electroforetico">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_Proteinograma_Electroforetico_tb_EstadoAnalisis">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Proteinograma_Electroforetico" Type="LabDBModel1.Store.tb_Analisis_Proteinograma_Electroforetico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Proteinograma_Electroforetico">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_tb_Estado_Analisis">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Analisis_tb_Paciente">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Analisis">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Compras_tb_NotaPedido">
+    <End Role="tb_NotaPedido" Type="LabDBModel1.Store.tb_NotaPedido" Multiplicity="0..1" />
+    <End Role="tb_Compras" Type="LabDBModel1.Store.tb_Compras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NotaPedido">
+        <PropertyRef Name="id_nota_pedido" />
+      </Principal>
+      <Dependent Role="tb_Compras">
+        <PropertyRef Name="notapedido_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Diagnosticos_tb_Pacientes">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Diagnosticos" Type="LabDBModel1.Store.tb_Diagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Diagnosticos">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Direccion_x_Paciente_tb_DireccionesPaciente">
+    <End Role="tb_DireccionTodos" Type="LabDBModel1.Store.tb_DireccionTodos" Multiplicity="1" />
+    <End Role="tb_Direccion_x_Paciente" Type="LabDBModel1.Store.tb_Direccion_x_Paciente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DireccionTodos">
+        <PropertyRef Name="id_dir" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_Paciente">
+        <PropertyRef Name="id_direccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Direccion_x_Paciente_tb_Paciente">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Direccion_x_Paciente" Type="LabDBModel1.Store.tb_Direccion_x_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Direccion_x_Paciente">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DireccionTodos_tb_Localidades">
+    <End Role="Localidad" Type="LabDBModel1.Store.Localidad" Multiplicity="0..1" />
+    <End Role="tb_DireccionTodos" Type="LabDBModel1.Store.tb_DireccionTodos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidad">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tb_DireccionTodos">
+        <PropertyRef Name="localidad_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Factura_tb_Iva">
+    <End Role="tb_IVA" Type="LabDBModel1.Store.tb_IVA" Multiplicity="0..1" />
+    <End Role="tb_Factura" Type="LabDBModel1.Store.tb_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_IVA">
+        <PropertyRef Name="id_iva" />
+      </Principal>
+      <Dependent Role="tb_Factura">
+        <PropertyRef Name="iva_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Factura_tb_Paciente">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Factura" Type="LabDBModel1.Store.tb_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Factura">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Factura_x_Analisis_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Factura_x_Analisis" Type="LabDBModel1.Store.tb_Factura_x_Analisis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Factura_x_Analisis">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Factura_x_Analisis_tb_Factura">
+    <End Role="tb_Factura" Type="LabDBModel1.Store.tb_Factura" Multiplicity="0..1" />
+    <End Role="tb_Factura_x_Analisis" Type="LabDBModel1.Store.tb_Factura_x_Analisis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Factura">
+        <PropertyRef Name="id_factura" />
+      </Principal>
+      <Dependent Role="tb_Factura_x_Analisis">
+        <PropertyRef Name="factura_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_InformeStock_tb_Usuarios">
+    <End Role="tb_Usuarios" Type="LabDBModel1.Store.tb_Usuarios" Multiplicity="0..1" />
+    <End Role="tb_InformeStock" Type="LabDBModel1.Store.tb_InformeStock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="tb_InformeStock">
+        <PropertyRef Name="responsable_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Insumos_tb_Medida_Insumo">
+    <End Role="tb_Medida_Insumo" Type="LabDBModel1.Store.tb_Medida_Insumo" Multiplicity="0..1" />
+    <End Role="tb_Insumos" Type="LabDBModel1.Store.tb_Insumos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Medida_Insumo">
+        <PropertyRef Name="id_medida" />
+      </Principal>
+      <Dependent Role="tb_Insumos">
+        <PropertyRef Name="medida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Insumos_tb_TipoInsumo">
+    <End Role="tb_Tipo_Insumo" Type="LabDBModel1.Store.tb_Tipo_Insumo" Multiplicity="0..1" />
+    <End Role="tb_Insumos" Type="LabDBModel1.Store.tb_Insumos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Tipo_Insumo">
+        <PropertyRef Name="id_tipo_insumo" />
+      </Principal>
+      <Dependent Role="tb_Insumos">
+        <PropertyRef Name="tipo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock">
+    <End Role="tb_InformeStock" Type="LabDBModel1.Store.tb_InformeStock" Multiplicity="0..1" />
+    <End Role="tb_Insumos_x_Informe_Stock" Type="LabDBModel1.Store.tb_Insumos_x_Informe_Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_InformeStock">
+        <PropertyRef Name="id_infome_stock" />
+      </Principal>
+      <Dependent Role="tb_Insumos_x_Informe_Stock">
+        <PropertyRef Name="informe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos">
+    <End Role="tb_Insumos" Type="LabDBModel1.Store.tb_Insumos" Multiplicity="0..1" />
+    <End Role="tb_Insumos_x_Informe_Stock" Type="LabDBModel1.Store.tb_Insumos_x_Informe_Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Insumos">
+        <PropertyRef Name="id_insumo" />
+      </Principal>
+      <Dependent Role="tb_Insumos_x_Informe_Stock">
+        <PropertyRef Name="insumo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Muestras_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Muestras" Type="LabDBModel1.Store.tb_Muestras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Muestras">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Muestras_tb_Muestras_Tipo">
+    <End Role="tb_Muestras_Tipo" Type="LabDBModel1.Store.tb_Muestras_Tipo" Multiplicity="1" />
+    <End Role="tb_Muestras" Type="LabDBModel1.Store.tb_Muestras" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Muestras_Tipo">
+        <PropertyRef Name="id_muestras_tipo" />
+      </Principal>
+      <Dependent Role="tb_Muestras">
+        <PropertyRef Name="id_muestra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Muestras_tb_Paciente">
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="0..1" />
+    <End Role="tb_Muestras" Type="LabDBModel1.Store.tb_Muestras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Pacientes">
+        <PropertyRef Name="id_paciente" />
+      </Principal>
+      <Dependent Role="tb_Muestras">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_NotaPedido_tb_InformeStock">
+    <End Role="tb_InformeStock" Type="LabDBModel1.Store.tb_InformeStock" Multiplicity="0..1" />
+    <End Role="tb_NotaPedido" Type="LabDBModel1.Store.tb_NotaPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_InformeStock">
+        <PropertyRef Name="id_infome_stock" />
+      </Principal>
+      <Dependent Role="tb_NotaPedido">
+        <PropertyRef Name="informeStock_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_OS">
+    <End Role="tb_ObraSocial" Type="LabDBModel1.Store.tb_ObraSocial" Multiplicity="0..1" />
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ObraSocial">
+        <PropertyRef Name="id_obra_social" />
+      </Principal>
+      <Dependent Role="tb_Pacientes">
+        <PropertyRef Name="obra_social_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Pacientes_Medicoid">
+    <End Role="tb_Medicos" Type="LabDBModel1.Store.tb_Medicos" Multiplicity="0..1" />
+    <End Role="tb_Pacientes" Type="LabDBModel1.Store.tb_Pacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Medicos">
+        <PropertyRef Name="id_medico" />
+      </Principal>
+      <Dependent Role="tb_Pacientes">
+        <PropertyRef Name="medico_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Quimica_Hematica_tb_Analisis">
+    <End Role="tb_Analisis" Type="LabDBModel1.Store.tb_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Quimica_Hematica" Type="LabDBModel1.Store.tb_Analisis_Quimica_Hematica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Analisis">
+        <PropertyRef Name="id_analisis" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Quimica_Hematica">
+        <PropertyRef Name="analisis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Quimica_Hematica_tb_estadoAnalisis">
+    <End Role="tb_Estado_Analisis" Type="LabDBModel1.Store.tb_Estado_Analisis" Multiplicity="0..1" />
+    <End Role="tb_Analisis_Quimica_Hematica" Type="LabDBModel1.Store.tb_Analisis_Quimica_Hematica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Estado_Analisis">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="tb_Analisis_Quimica_Hematica">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Telefono_x_Donante_tb_TelefonosTodos">
+    <End Role="tb_TelefonosTodos" Type="LabDBModel1.Store.tb_TelefonosTodos" Multiplicity="0..1" />
+    <End Role="tb_Telefono_x_Donante" Type="LabDBModel1.Store.tb_Telefono_x_Donante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TelefonosTodos">
+        <PropertyRef Name="id_telefono" />
+      </Principal>
+      <Dependent Role="tb_Telefono_x_Donante">
+        <PropertyRef Name="telefono_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Telefonos_x_ObraSocial_tb_TelefonosTodos">
+    <End Role="tb_TelefonosTodos" Type="LabDBModel1.Store.tb_TelefonosTodos" Multiplicity="0..1" />
+    <End Role="tb_Telefonos_x_ObraSocial" Type="LabDBModel1.Store.tb_Telefonos_x_ObraSocial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TelefonosTodos">
+        <PropertyRef Name="id_telefono" />
+      </Principal>
+      <Dependent Role="tb_Telefonos_x_ObraSocial">
+        <PropertyRef Name="telefono_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_telefono_id">
+    <End Role="tb_TelefonosTodos" Type="LabDBModel1.Store.tb_TelefonosTodos" Multiplicity="0..1" />
+    <End Role="tb_Telefono_x_Pacientes" Type="LabDBModel1.Store.tb_Telefono_x_Pacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TelefonosTodos">
+        <PropertyRef Name="id_telefono" />
+      </Principal>
+      <Dependent Role="tb_Telefono_x_Pacientes">
+        <PropertyRef Name="telefono_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

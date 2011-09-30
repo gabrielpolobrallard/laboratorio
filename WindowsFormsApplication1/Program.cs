@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApplication1.Vista.TabControlTodos;
+using WindowsFormsApplication1.Vista.Ventanas;
 
 namespace WindowsFormsApplication1
 {
@@ -16,13 +17,13 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form pr = new Principal();
-            pr.WindowState = FormWindowState.Maximized;
-            Form tbContTodos = new TabTodosControles();
-            tbContTodos.MdiParent = pr;
-            tbContTodos.WindowState = FormWindowState.Maximized;
-            tbContTodos.Show();
-            Application.Run(pr);
+            //Form pr = new Principal();
+            //pr.WindowState = FormWindowState.Maximized;
+            //Form tbContTodos = new TabTodosControles();
+            //tbContTodos.MdiParent = pr;
+            //tbContTodos.WindowState = FormWindowState.Maximized;
+            //tbContTodos.Show();
+            Application.Run(new  TabTodosControles());
         }
     }
 }

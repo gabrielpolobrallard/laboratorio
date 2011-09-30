@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="346b1d09-9265-4aa9-aadb-415999d94c55" parentDesignerName="LabDBCache" codeGenerationMode="Client and Server" synchronizeInOneTransaction="false" clientFileLocation="eb17a2fd-4a07-4a07-bc36-3f09dc44a1cb" serverFileLocation="eb17a2fd-4a07-4a07-bc36-3f09dc44a1cb" isRootSyncDesigner="true" rootSyncDesignerShouldGenerateCode="true" isClientSyncDesigner="false" isServerSyncDesigner="false" changeTrackingType="SqlServerChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncAdapters>
+    <syncAdapter Id="da97e43c-abf0-403a-8789-d794a3aca1cf" name="tb_AnalisisSyncAdapter" tableName="tb_Analisis">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/selectIncrementalInsertsCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+    <syncAdapter Id="5377de07-28c7-4121-b8f5-25f20d49a9dc" name="tb_PacientesSyncAdapter" tableName="tb_Pacientes">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+  </syncAdapters>
+  <syncTables>
+    <syncTable Id="ba4093a5-41a3-4019-8374-5a0805e38d63" name="tb_AnalisisSyncTable" syncDirection="Snapshot" creationOptions="DropExistingOrCreateNewTable" tableName="tb_Analisis" deletedItemsTableName="&amp;qt(none)&amp;qt" createdDateColumnName="&amp;qt(none)&amp;qt" lastEditDateColumnName="&amp;qt(none)&amp;qt" fullTableName="dbo.tb_Analisis" deletedDateColumnName="&amp;qt(none)&amp;qt" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncGroup" />
+      </syncGroup>
+    </syncTable>
+    <syncTable Id="97e874a1-d4c8-4fe6-949e-14ae6958b797" name="tb_PacientesSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="tb_Pacientes" deletedItemsTableName="tb_Pacientes_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.tb_Pacientes" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="7137b8f6-4e6b-4d76-9b3b-5e116e598153" name="tb_AnalisisSyncGroup" />
+    <syncGroup Id="70a7a90c-4158-4fab-a348-459c4d33a440" name="tb_PacientesSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="fdc40395-2a20-4bd5-ad64-1d9f8a353c8c" name="LabDBCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <serverSyncProvider>
+    <serverSyncProvider Id="9adcea02-ee91-47fb-8678-87a696b8f2f9" name="LabDBCacheServerSyncProvider">
+      <syncAdapters>
+        <syncAdapterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncAdapter" />
+        <syncAdapterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncAdapter" />
+      </syncAdapters>
+      <syncConnection>
+        <syncConnectionMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/ServerConnection" />
+      </syncConnection>
+      <selectNewAnchorCommand>
+        <syncAdapterCommandMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/selectNewAnchorCmd" />
+      </selectNewAnchorCommand>
+    </serverSyncProvider>
+  </serverSyncProvider>
+  <syncAgent>
+    <syncAgent name="LabDBCacheSyncAgent" synchronizeInOneTransaction="false">
+      <serverSyncProvider>
+        <serverSyncProviderMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/LabDBCacheServerSyncProvider" />
+      </serverSyncProvider>
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/LabDBCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_AnalisisSyncTable" />
+        <syncTableMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/tb_PacientesSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncAdapterCommands>
+    <syncAdapterCommand Id="fda80098-19d2-4a10-86ff-6027e8558f6e" commandText=" SET IDENTITY_INSERT dbo.tb_Analisis ON INSERT INTO dbo.tb_Analisis ([id_analisis], [paciente_id], [fecha_solicitud], [fecha_entrega], [estado_id], [medico_id], [enzim_id], [hepatog_id], [matfecal_id], [hemogram_id], [hemostaciaycoag_id], [hormonas_id], [inmunoglobul_id], [lipidogelectrof_id], [microbiolog_id], [orinacomplet_id], [orinacomplemen_id], [orinafisicoquimico_id], [orina_sediment_id], [proteinogelectroforetic_id], [quimica_hematica_id]) VALUES (@id_analisis, @paciente_id, @fecha_solicitud, @fecha_entrega, @estado_id, @medico_id, @enzim_id, @hepatog_id, @matfecal_id, @hemogram_id, @hemostaciaycoag_id, @hormonas_id, @inmunoglobul_id, @lipidogelectrof_id, @microbiolog_id, @orinacomplet_id, @orinacomplemen_id, @orinafisicoquimico_id, @orina_sediment_id, @proteinogelectroforetic_id, @quimica_hematica_id) SET @sync_row_count = @@rowcount SET IDENTITY_INSERT dbo.tb_Analisis OFF " commandType="Text" name="tb_AnalisisSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_analisis" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@paciente_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_solicitud" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_entrega" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@estado_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@medico_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@enzim_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hepatog_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@matfecal_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hemogram_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hemostaciaycoag_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hormonas_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@inmunoglobul_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@lipidogelectrof_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@microbiolog_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinacomplet_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinacomplemen_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinafisicoquimico_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orina_sediment_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@proteinogelectroforetic_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@quimica_hematica_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="227ea54c-df41-4f0e-87df-623407aa87ba" commandText="DELETE FROM dbo.tb_Analisis WHERE ([id_analisis] = @id_analisis) SET @sync_row_count = @@rowcount" commandType="Text" name="tb_AnalisisSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_analisis1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="ea88fa0a-7c36-4107-8ec3-464b4912479d" commandText="UPDATE dbo.tb_Analisis SET [paciente_id] = @paciente_id, [fecha_solicitud] = @fecha_solicitud, [fecha_entrega] = @fecha_entrega, [estado_id] = @estado_id, [medico_id] = @medico_id, [enzim_id] = @enzim_id, [hepatog_id] = @hepatog_id, [matfecal_id] = @matfecal_id, [hemogram_id] = @hemogram_id, [hemostaciaycoag_id] = @hemostaciaycoag_id, [hormonas_id] = @hormonas_id, [inmunoglobul_id] = @inmunoglobul_id, [lipidogelectrof_id] = @lipidogelectrof_id, [microbiolog_id] = @microbiolog_id, [orinacomplet_id] = @orinacomplet_id, [orinacomplemen_id] = @orinacomplemen_id, [orinafisicoquimico_id] = @orinafisicoquimico_id, [orina_sediment_id] = @orina_sediment_id, [proteinogelectroforetic_id] = @proteinogelectroforetic_id, [quimica_hematica_id] = @quimica_hematica_id WHERE ([id_analisis] = @id_analisis) SET @sync_row_count = @@rowcount" commandType="Text" name="tb_AnalisisSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@paciente_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_solicitud1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_entrega1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@estado_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@medico_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@enzim_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hepatog_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@matfecal_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hemogram_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hemostaciaycoag_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@hormonas_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@inmunoglobul_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@lipidogelectrof_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@microbiolog_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinacomplet_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinacomplemen_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orinafisicoquimico_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@orina_sediment_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@proteinogelectroforetic_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@quimica_hematica_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_analisis2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="1228c83e-f56d-435d-857b-5ce6c26f549c" commandText="SELECT * FROM dbo.tb_Analisis" commandType="Text" name="selectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand" />
+    <syncAdapterCommand Id="4cf3cfa2-35f0-44a2-aa3f-7fbd17c8fb36" commandText=" SET IDENTITY_INSERT dbo.tb_Pacientes ON ;WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) INSERT INTO dbo.tb_Pacientes ([id_paciente], [nombre], [apellido], [dni], [grupo_sanguineo], [fecha_alta], [fecha_nacimiento], [obra_social_id], [medico_id], [es_donante], [donante_id], [borrado]) VALUES (@id_paciente, @nombre, @apellido, @dni, @grupo_sanguineo, @fecha_alta, @fecha_nacimiento, @obra_social_id, @medico_id, @es_donante, @donante_id, @borrado) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes')  SET IDENTITY_INSERT dbo.tb_Pacientes OFF " commandType="Text" name="tb_PacientesSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_paciente" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@nombre" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@apellido" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@dni" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@grupo_sanguineo" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_alta" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_nacimiento" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@obra_social_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@medico_id2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@es_donante" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@donante_id" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@borrado" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count3" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="09e9500d-e6dc-4075-bf4e-5850d4638a41" commandText=";WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) DELETE dbo.tb_Pacientes FROM dbo.tb_Pacientes JOIN CHANGETABLE(VERSION dbo.tb_Pacientes, ([id_paciente]), (@id_paciente)) CT  ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente] WHERE (@sync_force_write = 1 OR CT.SYS_CHANGE_VERSION IS NULL OR CT.SYS_CHANGE_VERSION &lt;= @sync_last_received_anchor OR (CT.SYS_CHANGE_CONTEXT IS NOT NULL AND CT.SYS_CHANGE_CONTEXT = @sync_client_id_binary)) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes') " commandType="Text" name="tb_PacientesSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_paciente1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_force_write" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="bc651137-2480-4015-8393-a8608d72f707" commandText=";WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) UPDATE dbo.tb_Pacientes SET [nombre] = @nombre, [apellido] = @apellido, [dni] = @dni, [grupo_sanguineo] = @grupo_sanguineo, [fecha_alta] = @fecha_alta, [fecha_nacimiento] = @fecha_nacimiento, [obra_social_id] = @obra_social_id, [medico_id] = @medico_id, [es_donante] = @es_donante, [donante_id] = @donante_id, [borrado] = @borrado FROM dbo.tb_Pacientes  JOIN CHANGETABLE(VERSION dbo.tb_Pacientes, ([id_paciente]), (@id_paciente)) CT  ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente] WHERE (@sync_force_write = 1 OR CT.SYS_CHANGE_VERSION IS NULL OR CT.SYS_CHANGE_VERSION &lt;= @sync_last_received_anchor OR (CT.SYS_CHANGE_CONTEXT IS NOT NULL AND CT.SYS_CHANGE_CONTEXT = @sync_client_id_binary)) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes') " commandType="Text" name="tb_PacientesSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@nombre1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@apellido1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@dni1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@grupo_sanguineo1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_alta1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@fecha_nacimiento1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@obra_social_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@medico_id3" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@es_donante1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@donante_id1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@borrado1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_paciente2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_force_write1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_row_count5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="97f51bbd-53d5-4996-bcaa-fa76daeb07d2" commandText="SELECT CT.[id_paciente], CT.SYS_CHANGE_CONTEXT, CT.SYS_CHANGE_VERSION FROM CHANGETABLE(CHANGES dbo.tb_Pacientes, @sync_last_received_anchor) CT WHERE (CT.[id_paciente] = @id_paciente AND CT.SYS_CHANGE_OPERATION = 'D')" commandType="Text" name="tb_PacientesSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor3" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_paciente3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="3f98a17b-a1ce-48ac-98b8-4946e29a89f5" commandText="SELECT dbo.tb_Pacientes.[id_paciente], [nombre], [apellido], [dni], [grupo_sanguineo], [fecha_alta], [fecha_nacimiento], [obra_social_id], [medico_id], [es_donante], [donante_id], [borrado], CT.SYS_CHANGE_CONTEXT, CT.SYS_CHANGE_VERSION FROM dbo.tb_Pacientes JOIN CHANGETABLE(VERSION dbo.tb_Pacientes, ([id_paciente]), (@id_paciente)) CT  ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente]" commandType="Text" name="tb_PacientesSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@id_paciente4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="0a6ca93d-69a6-4c3d-acb6-d4c1d1fbd2e6" commandText="IF @sync_initialized = 0 SELECT dbo.tb_Pacientes.[id_paciente], [nombre], [apellido], [dni], [grupo_sanguineo], [fecha_alta], [fecha_nacimiento], [obra_social_id], [medico_id], [es_donante], [donante_id], [borrado] FROM dbo.tb_Pacientes LEFT OUTER JOIN CHANGETABLE(CHANGES dbo.tb_Pacientes, @sync_last_received_anchor) CT ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente] WHERE (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary) ELSE  BEGIN SELECT dbo.tb_Pacientes.[id_paciente], [nombre], [apellido], [dni], [grupo_sanguineo], [fecha_alta], [fecha_nacimiento], [obra_social_id], [medico_id], [es_donante], [donante_id], [borrado] FROM dbo.tb_Pacientes JOIN CHANGETABLE(CHANGES dbo.tb_Pacientes, @sync_last_received_anchor) CT ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente] WHERE (CT.SYS_CHANGE_OPERATION = 'I' AND CT.SYS_CHANGE_CREATION_VERSION  &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes')  END " commandType="Text" name="tb_PacientesSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_initialized" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor4" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary3" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_new_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="df890c62-ba54-45ce-9ef6-5197b56c66c6" commandText="IF @sync_initialized &gt; 0  BEGIN SELECT CT.[id_paciente] FROM CHANGETABLE(CHANGES dbo.tb_Pacientes, @sync_last_received_anchor) CT WHERE (CT.SYS_CHANGE_OPERATION = 'D' AND CT.SYS_CHANGE_VERSION &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes')  END " commandType="Text" name="tb_PacientesSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_initialized1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor5" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_new_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="6c2af45d-a228-4989-be4e-7de3b5ac0bc8" commandText="IF @sync_initialized &gt; 0  BEGIN SELECT dbo.tb_Pacientes.[id_paciente], [nombre], [apellido], [dni], [grupo_sanguineo], [fecha_alta], [fecha_nacimiento], [obra_social_id], [medico_id], [es_donante], [donante_id], [borrado] FROM dbo.tb_Pacientes JOIN CHANGETABLE(CHANGES dbo.tb_Pacientes, @sync_last_received_anchor) CT ON CT.[id_paciente] = dbo.tb_Pacientes.[id_paciente] WHERE (CT.SYS_CHANGE_OPERATION = 'U' AND CT.SYS_CHANGE_VERSION &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.tb_Pacientes')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.tb_Pacientes')  END " commandType="Text" name="tb_PacientesSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_initialized2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_last_received_anchor6" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_new_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_client_id_binary5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="6d68127a-5b3f-4866-89ee-2315bba007a7" commandText="Select @sync_new_received_anchor = CHANGE_TRACKING_CURRENT_VERSION()" commandType="Text" name="selectNewAnchorCmd" commandKind="SelectNewAnchorCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/346b1d09-9265-4aa9-aadb-415999d94c55/@sync_new_received_anchor3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+  </syncAdapterCommands>
+  <syncAdapterCommandParameters>
+    <syncAdapterCommandParameter Id="d8372924-187b-4f9a-bc52-3c686bd388d8" parameterType="Int" parameterName="@id_analisis" name="@id_analisis" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="84ec0e26-7519-4b73-8297-31619a37f624" parameterType="Int" parameterName="@paciente_id" name="@paciente_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3045e59f-2fd2-4bd2-89b7-278f4284b35f" parameterType="Date" parameterName="@fecha_solicitud" name="@fecha_solicitud" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a71ef9ed-a3b3-4e7b-a3ab-6b9000238b0a" parameterType="Date" parameterName="@fecha_entrega" name="@fecha_entrega" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2c260f6c-654a-406e-895f-3de1baf6e1e9" parameterType="Int" parameterName="@estado_id" name="@estado_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="83277e18-b0d5-45c3-a365-c06a62f4c9a5" parameterType="Int" parameterName="@medico_id" name="@medico_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1c32ab9a-eec6-45ec-95a4-bbcfe5d8bd2a" parameterType="Int" parameterName="@enzim_id" name="@enzim_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="eda68dc7-462c-4141-b390-17f75a42f355" parameterType="Int" parameterName="@hepatog_id" name="@hepatog_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="40c621b3-dd56-4122-ba7a-1a064369b324" parameterType="Int" parameterName="@matfecal_id" name="@matfecal_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bc422eb2-eb4e-4752-94f6-07463d0410ec" parameterType="Int" parameterName="@hemogram_id" name="@hemogram_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="60a2b437-bb8b-4c1a-951c-5c5c294da83e" parameterType="Int" parameterName="@hemostaciaycoag_id" name="@hemostaciaycoag_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="77893b68-a89f-4df7-9f41-8788ff57bb70" parameterType="Int" parameterName="@hormonas_id" name="@hormonas_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3fd20457-89dc-4e56-8b27-3daa994d5523" parameterType="Int" parameterName="@inmunoglobul_id" name="@inmunoglobul_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="63edf224-e3f9-4b7e-81b6-62b3dfb47c1f" parameterType="Int" parameterName="@lipidogelectrof_id" name="@lipidogelectrof_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="92e75f6b-d07e-4a6f-b4a2-62e10599b2b8" parameterType="Int" parameterName="@microbiolog_id" name="@microbiolog_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="04a055bb-2fa8-4b59-bf90-9f133c12158b" parameterType="Int" parameterName="@orinacomplet_id" name="@orinacomplet_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="62cf9de6-1300-47e7-8a7b-9d0c2100fb08" parameterType="Int" parameterName="@orinacomplemen_id" name="@orinacomplemen_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="93e21743-7efc-433f-abad-acffbff72b01" parameterType="Int" parameterName="@orinafisicoquimico_id" name="@orinafisicoquimico_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fc5ae591-ad99-407d-9cea-f71f82164916" parameterType="Int" parameterName="@orina_sediment_id" name="@orina_sediment_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="07431f4d-4dba-46c4-8b5f-23cd4f34bdc3" parameterType="Int" parameterName="@proteinogelectroforetic_id" name="@proteinogelectroforetic_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="33ef708a-47fc-4008-83c4-f9a4222dc053" parameterType="Int" parameterName="@quimica_hematica_id" name="@quimica_hematica_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="09687bde-4d5b-48bd-95fc-a3c36f369fa0" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="5fcbf67a-42a2-4315-b688-c9b1fbcab964" parameterType="Int" parameterName="@id_analisis" name="@id_analisis1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="65540913-a78f-4498-b17a-71d3a691aa3b" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count1" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="bf273410-f6f0-49ab-9056-077ad2eee4eb" parameterType="Int" parameterName="@paciente_id" name="@paciente_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="737baa7f-0313-4c28-803e-d04aecc282aa" parameterType="Date" parameterName="@fecha_solicitud" name="@fecha_solicitud1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="34579613-cdeb-4a12-80c3-dced8a146918" parameterType="Date" parameterName="@fecha_entrega" name="@fecha_entrega1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="00250ff7-802c-4bc2-a85f-ccedc51ad297" parameterType="Int" parameterName="@estado_id" name="@estado_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="db814c71-c07f-4edf-b02f-ffc2e3a8d41d" parameterType="Int" parameterName="@medico_id" name="@medico_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f20757f4-6fff-4088-8d7c-1c845406da62" parameterType="Int" parameterName="@enzim_id" name="@enzim_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1773ee71-e4a0-46f2-9654-cd5f54d44838" parameterType="Int" parameterName="@hepatog_id" name="@hepatog_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c5865286-7c25-4566-b331-8d37ca85c988" parameterType="Int" parameterName="@matfecal_id" name="@matfecal_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="989b2f85-d52d-4df7-8354-fee514297c5b" parameterType="Int" parameterName="@hemogram_id" name="@hemogram_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2426eb61-eccf-485a-bbee-4cb57f0d5520" parameterType="Int" parameterName="@hemostaciaycoag_id" name="@hemostaciaycoag_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="919abe7f-7649-483d-a81c-9e83b8c8a19b" parameterType="Int" parameterName="@hormonas_id" name="@hormonas_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dc3687c7-bcb5-4415-86fd-fe089180551c" parameterType="Int" parameterName="@inmunoglobul_id" name="@inmunoglobul_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="89d933d4-a9c4-4c1e-acfe-a2f0b137753e" parameterType="Int" parameterName="@lipidogelectrof_id" name="@lipidogelectrof_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0b139abe-dc88-4eac-8e8b-4c21db49b283" parameterType="Int" parameterName="@microbiolog_id" name="@microbiolog_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="94f68688-81d6-4baa-af1b-6a86bd554720" parameterType="Int" parameterName="@orinacomplet_id" name="@orinacomplet_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bf284c0b-21a1-413b-bf68-c7770633845c" parameterType="Int" parameterName="@orinacomplemen_id" name="@orinacomplemen_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b5a8f299-7fba-4a71-a350-8c53749c05b1" parameterType="Int" parameterName="@orinafisicoquimico_id" name="@orinafisicoquimico_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="06926469-6610-4f2b-aacb-8dd9af23e5d9" parameterType="Int" parameterName="@orina_sediment_id" name="@orina_sediment_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="541a4fde-7ea2-4120-a5f7-c96781d49a7e" parameterType="Int" parameterName="@proteinogelectroforetic_id" name="@proteinogelectroforetic_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bdf2cdf3-dfb2-45b3-b49c-e87e68c35022" parameterType="Int" parameterName="@quimica_hematica_id" name="@quimica_hematica_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1d7b3a9e-18c8-4d40-9035-4b4e9037ffb3" parameterType="Int" parameterName="@id_analisis" name="@id_analisis2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7a2056dc-0e97-4a92-9cfb-f8f7e6a56459" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count2" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="d14fc5f6-6d6f-4834-92b8-809063086217" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1c68bb01-a5b2-4536-bc8b-a15cfc5c1805" parameterType="Int" parameterName="@id_paciente" name="@id_paciente" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bec6b7b6-9b25-4d18-b166-dda03c516ce4" parameterType="VarChar" parameterName="@nombre" name="@nombre" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c1c36986-0644-4668-a056-2ee9093d41a0" parameterType="VarChar" parameterName="@apellido" name="@apellido" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f89ffcc9-4a3a-436c-8125-98906ed72856" parameterType="Int" parameterName="@dni" name="@dni" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="600ae1b2-0944-4895-9be6-5dd6d0addb8b" parameterType="Int" parameterName="@grupo_sanguineo" name="@grupo_sanguineo" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="902e0c68-5516-481a-8bf9-9ecb9b376716" parameterType="Date" parameterName="@fecha_alta" name="@fecha_alta" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fd5784ce-d64d-4c16-9b9f-e6cac9cc1d35" parameterType="Date" parameterName="@fecha_nacimiento" name="@fecha_nacimiento" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5328c043-8c82-488f-87fa-3dda48fb4750" parameterType="Int" parameterName="@obra_social_id" name="@obra_social_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fe0540f3-94e4-4340-8986-1bdb69623cac" parameterType="Int" parameterName="@medico_id" name="@medico_id2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7a1d4e03-f29d-4bbf-976c-2d56eb9b06f3" parameterType="Int" parameterName="@es_donante" name="@es_donante" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="79f04e0b-579f-4f85-b13e-7f22d162f0da" parameterType="Int" parameterName="@donante_id" name="@donante_id" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="58bc7b12-1543-4379-a6e8-24a2d3a51e30" parameterType="Int" parameterName="@borrado" name="@borrado" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="02c17d1d-713f-4a2b-b061-ebbd71856318" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count3" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="bd3b90c1-5d4b-4f33-87f9-4aa28621c9e3" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3db8d903-5a6b-4be6-838a-38c217f19011" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a471617e-3478-4953-8083-520f4b22c7b5" parameterType="Int" parameterName="@id_paciente" name="@id_paciente1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a9a0a96d-9e6e-467d-bfff-d50b7bd189f6" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="21c49678-72e0-4206-8fc6-3245aac0d580" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="02c0e786-12f2-4b40-a4f6-9fbfff3ce25e" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count4" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="65504ba9-3812-424b-98df-9274b62cb84b" parameterType="VarChar" parameterName="@nombre" name="@nombre1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f8772899-ed0a-492b-8f64-ec2b6f10c8f2" parameterType="VarChar" parameterName="@apellido" name="@apellido1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="daea7645-0433-43bb-86f5-a74f115b5480" parameterType="Int" parameterName="@dni" name="@dni1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6bea4165-d8a4-4277-9d5e-62b7bb5de606" parameterType="Int" parameterName="@grupo_sanguineo" name="@grupo_sanguineo1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="488a127b-2ee9-45bc-9813-99a027122b4b" parameterType="Date" parameterName="@fecha_alta" name="@fecha_alta1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1cbcc4ea-161c-4b70-addd-07f7d6e8d1a4" parameterType="Date" parameterName="@fecha_nacimiento" name="@fecha_nacimiento1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ec6c7658-2446-462a-bb8f-944fcce0ce4a" parameterType="Int" parameterName="@obra_social_id" name="@obra_social_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="09f906fe-6271-46b0-aa89-9ec9b014e1d8" parameterType="Int" parameterName="@medico_id" name="@medico_id3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d60022c3-f62b-4490-885e-b4bd8293af62" parameterType="Int" parameterName="@es_donante" name="@es_donante1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fbfff500-4140-435d-af82-13e7e7f83793" parameterType="Int" parameterName="@donante_id" name="@donante_id1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="23516410-7df4-4d00-95c0-f40435073b1a" parameterType="Int" parameterName="@borrado" name="@borrado1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bfd836f1-8145-418d-bfaa-5d9596dfb611" parameterType="Int" parameterName="@id_paciente" name="@id_paciente2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9bf9ec49-b6cc-4103-9801-28bb58ebc355" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d6b3af18-305d-4553-95b1-be667d8be1e5" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="10eabf49-5df0-4cab-91ad-25d087e42bd3" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6306a466-1dbf-4532-80b7-3f533f9a7c01" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count5" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="ac3db180-8388-469e-8aec-1a58aa39b485" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f4655b34-e4d4-4d5b-bc71-2e6d7f3d774a" parameterType="Int" parameterName="@id_paciente" name="@id_paciente3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="baa16909-e6d3-4a8a-8dd7-e12c0092e146" parameterType="Int" parameterName="@id_paciente" name="@id_paciente4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1023b785-f637-49ae-b85b-10f9e83b136b" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ada02ea8-dfe5-4d28-91a5-bc0e25e37f57" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3ad45b94-4580-4222-9092-b8f899554cab" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d87acfe8-98a6-48a5-b3f8-45892f18c9ce" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8922c81d-eacb-4a6c-89df-3bcd6347849f" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c89ae8d4-a582-4191-8bde-7a18f198e839" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="716a1942-5565-494d-9d1d-17c4162cb85c" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5c19e19f-a4a8-4dda-9cc9-7bc2659c6314" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c5eb8341-ccdf-46c4-a0ac-17d25f4bb3ad" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5cd3abed-de5e-4e4b-a193-68a32b22d2fc" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f404943c-2568-42c2-b3e4-8e9f4b46fb77" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4a6994fa-089c-423c-a80f-a241bc36cd4d" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4562da79-137d-4477-a088-00a4bad986bc" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor3" parameterDirection="Output" />
+  </syncAdapterCommandParameters>
+  <syncConnections>
+    <syncConnection Id="6c099007-e4e5-4fb7-95a2-f1dc550b248d" name="ClientConnection" connectionDisplayString="ClientLabDBConnectionString (Settings)" isAppSettings="true" appSettingsObjectName="Settings" appSettingsPropertyName="ClientLabDBConnectionString" appSettingsPropertyReference="" />
+    <syncConnection Id="6028eb6f-dd04-4da8-a4e7-c52a3cdd9e27" name="ServerConnection" connectionDisplayString="LabDBDAL (Settings)" isAppSettings="true" appSettingsObjectName="Settings" appSettingsPropertyName="LabDBDAL" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>

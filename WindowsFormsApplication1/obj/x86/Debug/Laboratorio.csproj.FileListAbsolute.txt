@@ -9,3 +9,19 @@ D:\Proyecto Laboratorio\WindowsFormsApplication1\bin\Debug\WindowsFormsApplicati
 D:\Proyecto Laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 D:\Proyecto Laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 D:\Proyecto Laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.InterrogatorioDonante.InterrogatorioDonante.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Principal.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.InterrogatorioDonante.InterrogatorioDonante.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas.Pacientes.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas_DialogBoxes_ABMS.CargarDiagnosticoFrm.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas_DialogBoxes_ABMS.CargarDireccion.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas_DialogBoxes_ABMS.CargarTelefonoFrm.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.TabControlTodos.TabTodosControles.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

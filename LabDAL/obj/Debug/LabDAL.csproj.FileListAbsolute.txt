@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\bin\Debug\LabDB.sdf
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\bin\Debug\LabDAL.dll.config
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\bin\Debug\LabDAL.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\bin\Debug\LabDAL.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\obj\Debug\LabDAL.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\LabDAL\obj\Debug\LabDAL.pdb

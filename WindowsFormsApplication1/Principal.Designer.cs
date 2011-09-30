@@ -90,7 +90,13 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.labelStatusPrincipal = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.panelContenidoPrin = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -106,7 +112,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(886, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1016, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -540,11 +546,57 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ...";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labelStatusPrincipal,
+            this.toolStripStatusLabel1,
+            this.toolStripProgressBar1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 712);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1016, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // labelStatusPrincipal
+            // 
+            this.labelStatusPrincipal.Name = "labelStatusPrincipal";
+            this.labelStatusPrincipal.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.labelStatusPrincipal.Size = new System.Drawing.Size(60, 17);
+            this.labelStatusPrincipal.Text = "Estado : ";
+            this.labelStatusPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Padding = new System.Windows.Forms.Padding(0, 0, 150, 0);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(150, 17);
+            this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            // 
+            // panelContenidoPrin
+            // 
+            this.panelContenidoPrin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenidoPrin.Location = new System.Drawing.Point(0, 24);
+            this.panelContenidoPrin.Name = "panelContenidoPrin";
+            this.panelContenidoPrin.Size = new System.Drawing.Size(1016, 688);
+            this.panelContenidoPrin.TabIndex = 3;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 509);
+            this.ClientSize = new System.Drawing.Size(1016, 734);
+            this.Controls.Add(this.panelContenidoPrin);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -554,6 +606,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -622,6 +676,11 @@
         private System.Windows.Forms.ToolStripMenuItem modificarCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.Panel panelContenidoPrin;
+        protected System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripStatusLabel labelStatusPrincipal;
+        public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
 
     }
 }
