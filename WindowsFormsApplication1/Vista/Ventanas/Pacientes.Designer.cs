@@ -284,7 +284,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1008, 700);
+            this.tabPage1.Size = new System.Drawing.Size(1008, 507);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos del Paciente";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -354,14 +354,14 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1016, 726);
+            this.tabControl1.Size = new System.Drawing.Size(1016, 533);
             this.tabControl1.TabIndex = 0;
             // 
             // Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 726);
+            this.ClientSize = new System.Drawing.Size(1016, 533);
             this.Controls.Add(this.tabControl1);
             this.Name = "Pacientes";
             this.Text = "Pacientes";

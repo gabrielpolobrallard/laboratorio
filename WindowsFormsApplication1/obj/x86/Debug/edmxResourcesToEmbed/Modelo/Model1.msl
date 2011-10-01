@@ -38,24 +38,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_Alarma_x_Insumo">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Alarma_x_Insumo">
-        <MappingFragment StoreEntitySet="tb_Alarma_x_Insumo">
-          <ScalarProperty Name="id_alarmaxinsumo" ColumnName="id_alarmaxinsumo" />
-          <ScalarProperty Name="alarma_id" ColumnName="alarma_id" />
-          <ScalarProperty Name="insumo_id" ColumnName="insumo_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_Alarmas_Stock">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Alarmas_Stock">
-        <MappingFragment StoreEntitySet="tb_Alarmas_Stock">
-          <ScalarProperty Name="id_alarma" ColumnName="id_alarma" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-          <ScalarProperty Name="detalle" ColumnName="detalle" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_Analisis">
       <EntityTypeMapping TypeName="LabDBModel.tb_Analisis">
         <MappingFragment StoreEntitySet="tb_Analisis">
@@ -681,41 +663,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_InformeStock">
-      <EntityTypeMapping TypeName="LabDBModel.tb_InformeStock">
-        <MappingFragment StoreEntitySet="tb_InformeStock">
-          <ScalarProperty Name="id_infome_stock" ColumnName="id_infome_stock" />
-          <ScalarProperty Name="fecha" ColumnName="fecha" />
-          <ScalarProperty Name="detalles" ColumnName="detalles" />
-          <ScalarProperty Name="responsable_id" ColumnName="responsable_id" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_Insumos">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Insumos">
-        <MappingFragment StoreEntitySet="tb_Insumos">
-          <ScalarProperty Name="id_insumo" ColumnName="id_insumo" />
-          <ScalarProperty Name="detalle" ColumnName="detalle" />
-          <ScalarProperty Name="laboratorio_marca" ColumnName="laboratorio_marca" />
-          <ScalarProperty Name="nombre_prod" ColumnName="nombre_prod" />
-          <ScalarProperty Name="cant_minima" ColumnName="cant_minima" />
-          <ScalarProperty Name="medida" ColumnName="medida" />
-          <ScalarProperty Name="precio_unidad" ColumnName="precio_unidad" />
-          <ScalarProperty Name="cant_disponible" ColumnName="cant_disponible" />
-          <ScalarProperty Name="tipo_id" ColumnName="tipo_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_Insumos_x_Informe_Stock">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Insumos_x_Informe_Stock">
-        <MappingFragment StoreEntitySet="tb_Insumos_x_Informe_Stock">
-          <ScalarProperty Name="id_ins_x_inf" ColumnName="id_ins_x_inf" />
-          <ScalarProperty Name="insumo_id" ColumnName="insumo_id" />
-          <ScalarProperty Name="informe_id" ColumnName="informe_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_IVA">
       <EntityTypeMapping TypeName="LabDBModel.tb_IVA">
         <MappingFragment StoreEntitySet="tb_IVA">
@@ -735,14 +682,6 @@
           <ScalarProperty Name="especialidad" ColumnName="especialidad" />
           <ScalarProperty Name="email1" ColumnName="email1" />
           <ScalarProperty Name="email2" ColumnName="email2" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_Medida_Insumo">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Medida_Insumo">
-        <MappingFragment StoreEntitySet="tb_Medida_Insumo">
-          <ScalarProperty Name="id_medida" ColumnName="id_medida" />
-          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -830,14 +769,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_Tipo_Insumo">
-      <EntityTypeMapping TypeName="LabDBModel.tb_Tipo_Insumo">
-        <MappingFragment StoreEntitySet="tb_Tipo_Insumo">
-          <ScalarProperty Name="id_tipo_insumo" ColumnName="id_tipo_insumo" />
-          <ScalarProperty Name="detalles" ColumnName="detalles" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_Usuarios">
       <EntityTypeMapping TypeName="LabDBModel.tb_Usuarios">
         <MappingFragment StoreEntitySet="tb_Usuarios">
@@ -873,6 +804,80 @@
       </EndProperty>
       <EndProperty Name="tb_TelefonosTodos">
         <ScalarProperty Name="id_telefono" ColumnName="telefono_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_InformeStock">
+      <EntityTypeMapping TypeName="LabDBModel.tb_InformeStock">
+        <MappingFragment StoreEntitySet="tb_InformeStock">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="responsable_id" ColumnName="responsable_id" />
+          <ScalarProperty Name="detalles" ColumnName="detalles" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_infome_stock" ColumnName="id_infome_stock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Medida_Insumo">
+      <EntityTypeMapping TypeName="LabDBModel.tb_Medida_Insumo">
+        <MappingFragment StoreEntitySet="tb_Medida_Insumo">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_medida" ColumnName="id_medida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Tipo_Insumo">
+      <EntityTypeMapping TypeName="LabDBModel.tb_Tipo_Insumo">
+        <MappingFragment StoreEntitySet="tb_Tipo_Insumo">
+          <ScalarProperty Name="detalles" ColumnName="detalles" />
+          <ScalarProperty Name="id_tipo_insumo" ColumnName="id_tipo_insumo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Alarmas_Stock">
+      <EntityTypeMapping TypeName="LabDBModel.tb_Alarmas_Stock">
+        <MappingFragment StoreEntitySet="tb_Alarmas_Stock">
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_alarma" ColumnName="id_alarma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Insumo_Marca">
+      <EntityTypeMapping TypeName="LabDBModel.tb_Insumo_Marca">
+        <MappingFragment StoreEntitySet="tb_Insumo_Marca">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Insumos">
+      <EntityTypeMapping TypeName="LabDBModel.tb_Insumos">
+        <MappingFragment StoreEntitySet="tb_Insumos">
+          <ScalarProperty Name="marca_id" ColumnName="marca_id" />
+          <ScalarProperty Name="tipo_id" ColumnName="tipo_id" />
+          <ScalarProperty Name="cant_disponible" ColumnName="cant_disponible" />
+          <ScalarProperty Name="precio_unidad" ColumnName="precio_unidad" />
+          <ScalarProperty Name="medida" ColumnName="medida" />
+          <ScalarProperty Name="cant_minima" ColumnName="cant_minima" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="id_insumo" ColumnName="id_insumo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tb_Alarma_x_Insumo" TypeName="LabDBModel.tb_Alarma_x_Insumo" StoreEntitySet="tb_Alarma_x_Insumo">
+      <EndProperty Name="tb_Insumos">
+        <ScalarProperty Name="id_insumo" ColumnName="insumo_id" />
+      </EndProperty>
+      <EndProperty Name="tb_Alarmas_Stock">
+        <ScalarProperty Name="id_alarma" ColumnName="alarma_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tb_Insumos_x_Informe_Stock" TypeName="LabDBModel.tb_Insumos_x_Informe_Stock" StoreEntitySet="tb_Insumos_x_Informe_Stock">
+      <EndProperty Name="tb_Insumos">
+        <ScalarProperty Name="id_insumo" ColumnName="insumo_id" />
+      </EndProperty>
+      <EndProperty Name="tb_InformeStock">
+        <ScalarProperty Name="id_infome_stock" ColumnName="informe_id" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>

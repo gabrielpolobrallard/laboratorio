@@ -98,9 +98,6 @@
     <Compile Include="Modelo\tb_Alarmas_Stock.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\tb_Alarma_x_Insumo.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Modelo\tb_Analisis.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -209,7 +206,7 @@
     <Compile Include="Modelo\tb_Insumos.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\tb_Insumos_x_Informe_Stock.cs">
+    <Compile Include="Modelo\tb_Insumo_Marca.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Modelo\tb_IVA.cs">
@@ -271,6 +268,12 @@
     <Compile Include="Vista\TabControlTodos\TabTodosControles.Designer.cs">
       <DependentUpon>TabTodosControles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Ventanas\ControlStockFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Ventanas\ControlStockFrm.Designer.cs">
+      <DependentUpon>ControlStockFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Ventanas\Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +298,12 @@
     <Compile Include="Vista\Ventanas_DialogBoxes_ABMS\CargarTelefonoFrm.Designer.cs">
       <DependentUpon>CargarTelefonoFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Ventanas_DialogBoxes_ABMS\NuevoProductoDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Ventanas_DialogBoxes_ABMS\NuevoProductoDialogBox.Designer.cs">
+      <DependentUpon>NuevoProductoDialogBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +322,9 @@
     <EmbeddedResource Include="Vista\TabControlTodos\TabTodosControles.resx">
       <DependentUpon>TabTodosControles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ventanas\ControlStockFrm.resx">
+      <DependentUpon>ControlStockFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Ventanas\Pacientes.resx">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Ventanas_DialogBoxes_ABMS\CargarTelefonoFrm.resx">
       <DependentUpon>CargarTelefonoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ventanas_DialogBoxes_ABMS\NuevoProductoDialogBox.resx">
+      <DependentUpon>NuevoProductoDialogBox.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Modelo\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -376,6 +391,15 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LabDAL\LabDAL.csproj">
+      <Project>{EB17A2FD-4A07-4A07-BC36-3F09DC44A1CB}</Project>
+      <Name>LabDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

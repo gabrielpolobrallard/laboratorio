@@ -25,3 +25,8 @@ C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.TabControlTodos.TabTodosControles.resources
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\LabDB.sdf
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\LabDAL.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\bin\Debug\LabDAL.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas.ControlStockFrm.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\TesisJava\laboratorio\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Vista.Ventanas_DialogBoxes_ABMS.NuevoProductoDialogBox.resources

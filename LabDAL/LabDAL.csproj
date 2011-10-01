@@ -113,6 +113,7 @@
     <None Include="LabDBDataSetControlStock.xss">
       <DependentUpon>LabDBDataSetControlStock.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\LabDBDataSetControlStock.tb_InsumosDataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

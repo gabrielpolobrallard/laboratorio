@@ -12,18 +12,17 @@ namespace WindowsFormsApplication1.Modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_Alarmas_Stock
+    public partial class tb_Insumo_Marca
     {
-        public tb_Alarmas_Stock()
+        public tb_Insumo_Marca()
         {
             this.tb_Insumos = new HashSet<tb_Insumos>();
         }
     
         // Primitive properties
     
-        public int id_alarma { get; set; }
-        public Nullable<int> estado { get; set; }
-        public string detalle { get; set; }
+        public int id_marca { get; set; }
+        public string descripcion { get; set; }
     
         // Navigation properties
     

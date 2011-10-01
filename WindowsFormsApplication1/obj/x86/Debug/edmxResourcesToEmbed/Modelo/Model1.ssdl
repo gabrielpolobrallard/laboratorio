@@ -43,6 +43,7 @@
     <EntitySet Name="tb_Factura_x_Analisis" EntityType="LabDBModel.Store.tb_Factura_x_Analisis" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_GrupoSanguineo" EntityType="LabDBModel.Store.tb_GrupoSanguineo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_InformeStock" EntityType="LabDBModel.Store.tb_InformeStock" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Insumo_Marca" EntityType="LabDBModel.Store.tb_Insumo_Marca" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_Insumos" EntityType="LabDBModel.Store.tb_Insumos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_Insumos_x_Informe_Stock" EntityType="LabDBModel.Store.tb_Insumos_x_Informe_Stock" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_IVA" EntityType="LabDBModel.Store.tb_IVA" store:Type="Tables" Schema="dbo" />
@@ -59,10 +60,6 @@
     <EntitySet Name="tb_TelefonosTodos" EntityType="LabDBModel.Store.tb_TelefonosTodos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_Tipo_Insumo" EntityType="LabDBModel.Store.tb_Tipo_Insumo" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tb_Usuarios" EntityType="LabDBModel.Store.tb_Usuarios" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="fk_alarma_insumo_id" Association="LabDBModel.Store.fk_alarma_insumo_id">
-      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
-      <End Role="tb_Alarma_x_Insumo" EntitySet="tb_Alarma_x_Insumo" />
-    </AssociationSet>
     <AssociationSet Name="FK_Departamento_Prov" Association="LabDBModel.Store.FK_Departamento_Prov">
       <End Role="Provincia" EntitySet="Provincia" />
       <End Role="Departamento" EntitySet="Departamento" />
@@ -131,8 +128,12 @@
       <End Role="tb_Pacientes" EntitySet="tb_Pacientes" />
       <End Role="tb_Email_x_Paciente" EntitySet="tb_Email_x_Paciente" />
     </AssociationSet>
-    <AssociationSet Name="FK_tb_Alarma_x_Insumo_tb_Alarma_" Association="LabDBModel.Store.FK_tb_Alarma_x_Insumo_tb_Alarma_">
+    <AssociationSet Name="FK_tb_Alarma_x_Insumo_tb_Alarmas_Stock" Association="LabDBModel.Store.FK_tb_Alarma_x_Insumo_tb_Alarmas_Stock">
       <End Role="tb_Alarmas_Stock" EntitySet="tb_Alarmas_Stock" />
+      <End Role="tb_Alarma_x_Insumo" EntitySet="tb_Alarma_x_Insumo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Alarma_x_Insumo_tb_Insumos" Association="LabDBModel.Store.FK_tb_Alarma_x_Insumo_tb_Insumos">
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
       <End Role="tb_Alarma_x_Insumo" EntitySet="tb_Alarma_x_Insumo" />
     </AssociationSet>
     <AssociationSet Name="FK_tb_Analisis_Enzimologia_tb_Analisis_Estado" Association="LabDBModel.Store.FK_tb_Analisis_Enzimologia_tb_Analisis_Estado">
@@ -319,6 +320,10 @@
       <End Role="tb_Usuarios" EntitySet="tb_Usuarios" />
       <End Role="tb_InformeStock" EntitySet="tb_InformeStock" />
     </AssociationSet>
+    <AssociationSet Name="FK_tb_Insumos_tb_Insumo_Marca" Association="LabDBModel.Store.FK_tb_Insumos_tb_Insumo_Marca">
+      <End Role="tb_Insumo_Marca" EntitySet="tb_Insumo_Marca" />
+      <End Role="tb_Insumos" EntitySet="tb_Insumos" />
+    </AssociationSet>
     <AssociationSet Name="FK_tb_Insumos_tb_Medida_Insumo" Association="LabDBModel.Store.FK_tb_Insumos_tb_Medida_Insumo">
       <End Role="tb_Medida_Insumo" EntitySet="tb_Medida_Insumo" />
       <End Role="tb_Insumos" EntitySet="tb_Insumos" />
@@ -327,11 +332,11 @@
       <End Role="tb_Tipo_Insumo" EntitySet="tb_Tipo_Insumo" />
       <End Role="tb_Insumos" EntitySet="tb_Insumos" />
     </AssociationSet>
-    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock" Association="LabDBModel.Store.FK_tb_Insumos_x_Informe_Stock_tb_InformeStock">
+    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock1" Association="LabDBModel.Store.FK_tb_Insumos_x_Informe_Stock_tb_InformeStock1">
       <End Role="tb_InformeStock" EntitySet="tb_InformeStock" />
       <End Role="tb_Insumos_x_Informe_Stock" EntitySet="tb_Insumos_x_Informe_Stock" />
     </AssociationSet>
-    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos" Association="LabDBModel.Store.FK_tb_Insumos_x_Informe_Stock_tb_Insumos">
+    <AssociationSet Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos1" Association="LabDBModel.Store.FK_tb_Insumos_x_Informe_Stock_tb_Insumos1">
       <End Role="tb_Insumos" EntitySet="tb_Insumos" />
       <End Role="tb_Insumos_x_Informe_Stock" EntitySet="tb_Insumos_x_Informe_Stock" />
     </AssociationSet>
@@ -419,17 +424,17 @@
   </EntityType>
   <EntityType Name="tb_Alarma_x_Insumo">
     <Key>
-      <PropertyRef Name="id_alarmaxinsumo" />
+      <PropertyRef Name="alarma_id" />
+      <PropertyRef Name="insumo_id" />
     </Key>
-    <Property Name="id_alarmaxinsumo" Type="int" Nullable="false" />
-    <Property Name="alarma_id" Type="int" />
-    <Property Name="insumo_id" Type="int" />
+    <Property Name="alarma_id" Type="int" Nullable="false" />
+    <Property Name="insumo_id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_Alarmas_Stock">
     <Key>
       <PropertyRef Name="id_alarma" />
     </Key>
-    <Property Name="id_alarma" Type="int" Nullable="false" />
+    <Property Name="id_alarma" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="estado" Type="int" />
     <Property Name="detalle" Type="varchar" MaxLength="500" />
   </EntityType>
@@ -1036,33 +1041,39 @@
     <Key>
       <PropertyRef Name="id_infome_stock" />
     </Key>
-    <Property Name="id_infome_stock" Type="int" Nullable="false" />
+    <Property Name="id_infome_stock" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="fecha" Type="date" />
     <Property Name="detalles" Type="text" />
     <Property Name="responsable_id" Type="int" />
     <Property Name="estado" Type="int" />
   </EntityType>
+  <EntityType Name="tb_Insumo_Marca">
+    <Key>
+      <PropertyRef Name="id_marca" />
+    </Key>
+    <Property Name="id_marca" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="tb_Insumos">
     <Key>
       <PropertyRef Name="id_insumo" />
     </Key>
-    <Property Name="id_insumo" Type="int" Nullable="false" />
+    <Property Name="id_insumo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="detalle" Type="varchar" MaxLength="200" />
-    <Property Name="laboratorio_marca" Type="int" />
-    <Property Name="nombre_prod" Type="varchar" MaxLength="200" />
     <Property Name="cant_minima" Type="int" />
     <Property Name="medida" Type="int" />
     <Property Name="precio_unidad" Type="decimal" />
     <Property Name="cant_disponible" Type="int" />
     <Property Name="tipo_id" Type="int" />
+    <Property Name="marca_id" Type="int" />
   </EntityType>
   <EntityType Name="tb_Insumos_x_Informe_Stock">
     <Key>
-      <PropertyRef Name="id_ins_x_inf" />
+      <PropertyRef Name="insumo_id" />
+      <PropertyRef Name="informe_id" />
     </Key>
-    <Property Name="id_ins_x_inf" Type="int" Nullable="false" />
-    <Property Name="insumo_id" Type="int" />
-    <Property Name="informe_id" Type="int" />
+    <Property Name="insumo_id" Type="int" Nullable="false" />
+    <Property Name="informe_id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_IVA">
     <Key>
@@ -1088,7 +1099,7 @@
     <Key>
       <PropertyRef Name="id_medida" />
     </Key>
-    <Property Name="id_medida" Type="int" Nullable="false" />
+    <Property Name="id_medida" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="descripcion" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tb_Muestras">
@@ -1179,7 +1190,7 @@
     <Key>
       <PropertyRef Name="id_tipo_insumo" />
     </Key>
-    <Property Name="id_tipo_insumo" Type="int" Nullable="false" />
+    <Property Name="id_tipo_insumo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="detalles" Type="varchar" MaxLength="100" />
   </EntityType>
   <EntityType Name="tb_Usuarios">
@@ -1202,18 +1213,6 @@
     <Property Name="password" Type="varchar" MaxLength="50" />
     <Property Name="username" Type="varchar" MaxLength="50" />
   </EntityType>
-  <Association Name="fk_alarma_insumo_id">
-    <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="0..1" />
-    <End Role="tb_Alarma_x_Insumo" Type="LabDBModel.Store.tb_Alarma_x_Insumo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_Insumos">
-        <PropertyRef Name="id_insumo" />
-      </Principal>
-      <Dependent Role="tb_Alarma_x_Insumo">
-        <PropertyRef Name="insumo_id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Departamento_Prov">
     <End Role="Provincia" Type="LabDBModel.Store.Provincia" Multiplicity="1" />
     <End Role="Departamento" Type="LabDBModel.Store.Departamento" Multiplicity="*" />
@@ -1418,8 +1417,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tb_Alarma_x_Insumo_tb_Alarma_">
-    <End Role="tb_Alarmas_Stock" Type="LabDBModel.Store.tb_Alarmas_Stock" Multiplicity="0..1" />
+  <Association Name="FK_tb_Alarma_x_Insumo_tb_Alarmas_Stock">
+    <End Role="tb_Alarmas_Stock" Type="LabDBModel.Store.tb_Alarmas_Stock" Multiplicity="1" />
     <End Role="tb_Alarma_x_Insumo" Type="LabDBModel.Store.tb_Alarma_x_Insumo" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tb_Alarmas_Stock">
@@ -1427,6 +1426,18 @@
       </Principal>
       <Dependent Role="tb_Alarma_x_Insumo">
         <PropertyRef Name="alarma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Alarma_x_Insumo_tb_Insumos">
+    <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="1" />
+    <End Role="tb_Alarma_x_Insumo" Type="LabDBModel.Store.tb_Alarma_x_Insumo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Insumos">
+        <PropertyRef Name="id_insumo" />
+      </Principal>
+      <Dependent Role="tb_Alarma_x_Insumo">
+        <PropertyRef Name="insumo_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1982,6 +1993,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_tb_Insumos_tb_Insumo_Marca">
+    <End Role="tb_Insumo_Marca" Type="LabDBModel.Store.tb_Insumo_Marca" Multiplicity="0..1" />
+    <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Insumo_Marca">
+        <PropertyRef Name="id_marca" />
+      </Principal>
+      <Dependent Role="tb_Insumos">
+        <PropertyRef Name="marca_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_tb_Insumos_tb_Medida_Insumo">
     <End Role="tb_Medida_Insumo" Type="LabDBModel.Store.tb_Medida_Insumo" Multiplicity="0..1" />
     <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="*" />
@@ -2006,8 +2029,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock">
-    <End Role="tb_InformeStock" Type="LabDBModel.Store.tb_InformeStock" Multiplicity="0..1" />
+  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_InformeStock1">
+    <End Role="tb_InformeStock" Type="LabDBModel.Store.tb_InformeStock" Multiplicity="1" />
     <End Role="tb_Insumos_x_Informe_Stock" Type="LabDBModel.Store.tb_Insumos_x_Informe_Stock" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tb_InformeStock">
@@ -2018,8 +2041,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos">
-    <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="0..1" />
+  <Association Name="FK_tb_Insumos_x_Informe_Stock_tb_Insumos1">
+    <End Role="tb_Insumos" Type="LabDBModel.Store.tb_Insumos" Multiplicity="1" />
     <End Role="tb_Insumos_x_Informe_Stock" Type="LabDBModel.Store.tb_Insumos_x_Informe_Stock" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tb_Insumos">

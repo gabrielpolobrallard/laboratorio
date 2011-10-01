@@ -1,4 +1,5 @@
 ﻿namespace WindowsFormsApplication1.Vista.TabControlTodos
+
 {
     partial class TabTodosControles
     {
@@ -28,18 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
             "Paciente1",
             "342344324",
             "0 R Negativo",
             "OSDE"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Paciente2");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Paciente3");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Paciente2");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Paciente3");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabTodosControles));
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
             "Analisis Orina",
             "2 de Febrero 2002"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
             "Analisis Orina",
             "2 de Febrero 2002"}, -1);
             this.tabPageDonantes = new System.Windows.Forms.TabPage();
@@ -122,10 +123,9 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPageControlStock = new System.Windows.Forms.TabPage();
             this.splitContainerControlInvent = new System.Windows.Forms.SplitContainer();
-            this.paneldgvcontrolinventario = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewContStock = new System.Windows.Forms.DataGridView();
             this.panel16 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -259,6 +259,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabPageDonantes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -284,12 +285,11 @@
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabPageControlStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControlInvent)).BeginInit();
             this.splitContainerControlInvent.Panel1.SuspendLayout();
             this.splitContainerControlInvent.SuspendLayout();
-            this.paneldgvcontrolinventario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContStock)).BeginInit();
             this.panel16.SuspendLayout();
             this.tabPageAnalisisClinicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
@@ -391,9 +391,9 @@
             this.columnHeader15});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem11,
+            listViewItem12,
+            listViewItem13});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(314, 400);
@@ -1048,7 +1048,7 @@
             this.columnHeader14});
             this.listView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem14});
             this.listView4.Location = new System.Drawing.Point(0, 0);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(444, 530);
@@ -1181,16 +1181,17 @@
             this.tabPage4.Text = "Facturación";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPageControlStock
             // 
-            this.tabPage3.Controls.Add(this.splitContainerControlInvent);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1008, 461);
-            this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "Control de Inventario";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageControlStock.Controls.Add(this.splitContainerControlInvent);
+            this.tabPageControlStock.Location = new System.Drawing.Point(4, 22);
+            this.tabPageControlStock.Name = "tabPageControlStock";
+            this.tabPageControlStock.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageControlStock.Size = new System.Drawing.Size(1008, 461);
+            this.tabPageControlStock.TabIndex = 4;
+            this.tabPageControlStock.Text = "Control de Inventario";
+            this.tabPageControlStock.UseVisualStyleBackColor = true;
+            this.tabPageControlStock.Enter += new System.EventHandler(this.tabPageControlStock_Enter);
             // 
             // splitContainerControlInvent
             // 
@@ -1201,33 +1202,25 @@
             // 
             // splitContainerControlInvent.Panel1
             // 
-            this.splitContainerControlInvent.Panel1.Controls.Add(this.paneldgvcontrolinventario);
+            this.splitContainerControlInvent.Panel1.Controls.Add(this.dataGridViewContStock);
             this.splitContainerControlInvent.Panel1.Controls.Add(this.panel16);
             this.splitContainerControlInvent.Size = new System.Drawing.Size(1002, 455);
             this.splitContainerControlInvent.SplitterDistance = 334;
             this.splitContainerControlInvent.TabIndex = 0;
             // 
-            // paneldgvcontrolinventario
+            // dataGridViewContStock
             // 
-            this.paneldgvcontrolinventario.BackColor = System.Drawing.Color.SteelBlue;
-            this.paneldgvcontrolinventario.Controls.Add(this.dataGridView1);
-            this.paneldgvcontrolinventario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldgvcontrolinventario.Location = new System.Drawing.Point(0, 65);
-            this.paneldgvcontrolinventario.Name = "paneldgvcontrolinventario";
-            this.paneldgvcontrolinventario.Size = new System.Drawing.Size(1002, 269);
-            this.paneldgvcontrolinventario.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(194, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewContStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewContStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewContStock.Location = new System.Drawing.Point(0, 65);
+            this.dataGridViewContStock.Name = "dataGridViewContStock";
+            this.dataGridViewContStock.Size = new System.Drawing.Size(1002, 269);
+            this.dataGridViewContStock.TabIndex = 1;
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.DarkGray;
+            this.panel16.Controls.Add(this.button4);
             this.panel16.Controls.Add(this.comboBox1);
             this.panel16.Controls.Add(this.textBox1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1496,7 +1489,6 @@
             this.dgv_PacienteListAnalisis.Size = new System.Drawing.Size(249, 71);
             this.dgv_PacienteListAnalisis.TabIndex = 0;
             this.dgv_PacienteListAnalisis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PacienteListAnalisis_CellContentClick);
-            this.dgv_PacienteListAnalisis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PacienteListAnalisis_CellDoubleClick);
             // 
             // tableLayoutPanel9
             // 
@@ -2485,7 +2477,7 @@
             this.columnHeader6});
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem15});
             this.listView2.Location = new System.Drawing.Point(0, 0);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(445, 530);
@@ -2608,7 +2600,7 @@
             this.tabControl1.Controls.Add(this.PacientesTab);
             this.tabControl1.Controls.Add(this.tabPageDonantes);
             this.tabControl1.Controls.Add(this.tabPageAnalisisClinicos);
-            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPageControlStock);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
@@ -2629,6 +2621,16 @@
             this.tabPage9.TabIndex = 9;
             this.tabPage9.Text = "Medicos";
             this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(438, 26);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // TabTodosControles
             // 
@@ -2674,12 +2676,11 @@
             this.splitContainer4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.tabPageControlStock.ResumeLayout(false);
             this.splitContainerControlInvent.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControlInvent)).EndInit();
             this.splitContainerControlInvent.ResumeLayout(false);
-            this.paneldgvcontrolinventario.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContStock)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.tabPageAnalisisClinicos.ResumeLayout(false);
@@ -2815,7 +2816,7 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPageControlStock;
         private System.Windows.Forms.TabPage tabPageAnalisisClinicos;
         private System.Windows.Forms.TabPage PacientesTab;
         private System.Windows.Forms.SplitContainer splitContainer1;
@@ -2950,11 +2951,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_analisis;
         private System.Windows.Forms.SplitContainer splitContainerControlInvent;
-        private System.Windows.Forms.Panel paneldgvcontrolinventario;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewContStock;
+        private System.Windows.Forms.Button button4;
 
     }
 }

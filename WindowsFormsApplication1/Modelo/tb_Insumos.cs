@@ -16,28 +16,28 @@ namespace WindowsFormsApplication1.Modelo
     {
         public tb_Insumos()
         {
-            this.tb_Alarma_x_Insumo = new HashSet<tb_Alarma_x_Insumo>();
-            this.tb_Insumos_x_Informe_Stock = new HashSet<tb_Insumos_x_Informe_Stock>();
+            this.tb_Alarmas_Stock = new HashSet<tb_Alarmas_Stock>();
+            this.tb_InformeStock = new HashSet<tb_InformeStock>();
         }
     
         // Primitive properties
     
         public int id_insumo { get; set; }
         public string detalle { get; set; }
-        public Nullable<int> laboratorio_marca { get; set; }
-        public string nombre_prod { get; set; }
         public Nullable<int> cant_minima { get; set; }
         public Nullable<int> medida { get; set; }
         public Nullable<decimal> precio_unidad { get; set; }
         public Nullable<int> cant_disponible { get; set; }
         public Nullable<int> tipo_id { get; set; }
+        public Nullable<int> marca_id { get; set; }
     
         // Navigation properties
     
-        public virtual ICollection<tb_Alarma_x_Insumo> tb_Alarma_x_Insumo { get; set; }
+        public virtual tb_Insumo_Marca tb_Insumo_Marca { get; set; }
         public virtual tb_Medida_Insumo tb_Medida_Insumo { get; set; }
         public virtual tb_Tipo_Insumo tb_Tipo_Insumo { get; set; }
-        public virtual ICollection<tb_Insumos_x_Informe_Stock> tb_Insumos_x_Informe_Stock { get; set; }
+        public virtual ICollection<tb_Alarmas_Stock> tb_Alarmas_Stock { get; set; }
+        public virtual ICollection<tb_InformeStock> tb_InformeStock { get; set; }
     
     }
 }

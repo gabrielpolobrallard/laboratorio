@@ -9,14 +9,14 @@ using System.Windows.Forms;
 using WindowsFormsApplication1.Vista.InterrogatorioDonante;
 using WindowsFormsApplication1.Modelo;
 using WindowsFormsApplication1.Vista.Ventanas_DialogBoxes_ABMS;
-using WindowsFormsApplication1;
+using WindowsFormsApplication1.Vista.TabControlTodos;
 
 namespace WindowsFormsApplication1.Vista.TabControlTodos
 {
-    
+
     public partial class TabTodosControles : Principal
     {
-      
+
         #region Variables de la Clase
 
 
@@ -53,7 +53,7 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
                 comboBusquedaGrupoSang.ValueMember = "id_grupo";
             }
         }
-
+        
         #region TODO ESTO CORRESPONDE A EL TAB PACIENTE!!!!!
 
         //Interrogatorio boton
@@ -462,6 +462,7 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
 
 
         #region TAB CONROL STOCk
+
         private void tabPageAnalisisClinicos_Enter(object sender, EventArgs e)
         {
             using (var ctx = new LabDBEntities())
@@ -469,6 +470,7 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
                 var query = (from p in ctx.tb_Pacientes.Where(paciente => paciente.borrado == 0)
                              select new { p.id_paciente, p.nombre, p.apellido, p.dni }).ToList();
                 dgv_PacienteListAnalisis.DataSource = query;
+
             }
 
         }
@@ -478,76 +480,76 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
             int idp = Convert.ToInt32(this.dgv_PacienteListAnalisis.CurrentRow.Cells[0].Value);
 
         }
+        
+        //private void dgv_PacienteListAnalisis_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    using (var ctx = new LabDBEntities())
+        //    {
+        //        //var query = (from pf in ctx.tb_Analisis
+        //        //             join enzim in ctx.tb_Analisis_Enzimologia on pf.id_analisis equals enzim.analisis_id
+        //        //             into enzimRes
+        //        //             from enzinResultxx in enzimRes.DefaultIfEmpty()
+        //        //             join matfecal in ctx.tb_Analisis_Examen_MateriaFecal on pf.id_analisis equals matfecal.analisis_id
+        //        //             into matfecalRes
+        //        //             from matfecalResxxx in matfecalRes.DefaultIfEmpty()
+        //        //             join hemograma in ctx.tb_Analisis_Hemograma on pf.id_analisis equals hemograma.analisis_id
+        //        //             into hemogramaRes
+        //        //             from hemogramaResxxx in hemogramaRes.DefaultIfEmpty()
+        //        //             join hemostycoag in ctx.tb_Analisis_Hemostacia_Coagulacion on pf.id_analisis equals hemostycoag.analisis_id
+        //        //             into hemostycoagRes
+        //        //             from hemostycoagResxxx in hemostycoagRes.DefaultIfEmpty()
+        //        //             join hepatograma in ctx.tb_Analisis_Hepatograma on pf.id_analisis equals hepatograma.analisis_id
+        //        //             into hepatogramaRes
+        //        //             from hepatogramaResxxx in hepatogramaRes.DefaultIfEmpty()
+        //        //             join hormonas in ctx.tb_Analisis_Hormonas on pf.id_analisis equals hormonas.analisis_id
+        //        //             into hormonasRes
+        //        //             from hormonasResxxx in hormonasRes.DefaultIfEmpty()
+        //        //             join inminoglobulinas in ctx.tb_Analisis_Inmunoglobulinas on pf.id_analisis equals inminoglobulinas.analisis_id
+        //        //             into inmunoglobulinasRes
+        //        //             from inmunoglobulinaResxxx in inmunoglobulinasRes.DefaultIfEmpty()
+        //        //             join inmunologia in ctx.tb_Analisis_Inmunologia on pf.id_analisis equals inmunologia.analisis_id
+        //        //             into inmunologiaRes
+        //        //             from inmunologiaResxxx in inmunologiaRes.DefaultIfEmpty()
+        //        //             join lipidogramaelectroforet in ctx.tb_Analisis_LipidoGrama_Electroforetico on pf.id_analisis equals lipidogramaelectroforet.analisis_id
+        //        //             into lipidElectroforetRes
+        //        //             from lipidElectroforetResxxx in lipidElectroforetRes.DefaultIfEmpty()
+        //        //             join microbiolog in ctx.tb_Analisis_Microbiologico on pf.id_analisis equals microbiolog.analisis_id
+        //        //             into microbiologRes 
+        //        //             from microbiologResxxx in microbiologRes.DefaultIfEmpty()
+        //        //             join orina_complementario in ctx.tb_Analisis_Orina_Complementarios on pf.id_analisis equals orina_complementario.tb_Analisis_Orina_Completa.analisis_id
+        //        //             into orina_compRes
+        //        //             from orina_compResxxx in orina_compRes.DefaultIfEmpty()
+        //        //             join orina_fisico_q in ctx.tb_Analisis_Orina_Examen_Fisico_Quimico on pf.id_analisis equals orina_fisico_q.tb_Analisis_Orina_Completa.analisis_id
+        //        //             into orina_completaRes
+        //        //             from orina_completaResxxx in orina_completaRes.DefaultIfEmpty()
+        //        //             join orina_sedimento in ctx.tb_Analisis_Orina_Examen_Sedimento on pf.id_analisis equals orina_sedimento.tb_Analisis_Orina_Completa.analisis_id
+        //        //             into orina_sedimentoRes
+        //        //             from orina_sedimentoResxxx in orina_sedimentoRes.DefaultIfEmpty()
+        //        //             join protelectroforetico in ctx.tb_Analisis_Proteinograma_Electroforetico on pf.id_analisis equals protelectroforetico.analisis_id
+        //        //             into protelectroforeticoRes 
+        //        //             from protelectroforeticoResxxx in protelectroforeticoRes.DefaultIfEmpty()
+        //        //             join quimica_hematica in ctx.tb_Analisis_Quimica_Hematica on pf.id_analisis equals quimica_hematica.analisis_id
+        //        //             into quimicaHematicaRes
+        //        //             from quimicaHematicaResxxx in quimicaHematicaRes.DefaultIfEmpty()
 
-        private void dgv_PacienteListAnalisis_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            using (var ctx = new LabDBEntities())
-            {
-                //var query = (from pf in ctx.tb_Analisis
-                //             join enzim in ctx.tb_Analisis_Enzimologia on pf.id_analisis equals enzim.analisis_id
-                //             into enzimRes
-                //             from enzinResultxx in enzimRes.DefaultIfEmpty()
-                //             join matfecal in ctx.tb_Analisis_Examen_MateriaFecal on pf.id_analisis equals matfecal.analisis_id
-                //             into matfecalRes
-                //             from matfecalResxxx in matfecalRes.DefaultIfEmpty()
-                //             join hemograma in ctx.tb_Analisis_Hemograma on pf.id_analisis equals hemograma.analisis_id
-                //             into hemogramaRes
-                //             from hemogramaResxxx in hemogramaRes.DefaultIfEmpty()
-                //             join hemostycoag in ctx.tb_Analisis_Hemostacia_Coagulacion on pf.id_analisis equals hemostycoag.analisis_id
-                //             into hemostycoagRes
-                //             from hemostycoagResxxx in hemostycoagRes.DefaultIfEmpty()
-                //             join hepatograma in ctx.tb_Analisis_Hepatograma on pf.id_analisis equals hepatograma.analisis_id
-                //             into hepatogramaRes
-                //             from hepatogramaResxxx in hepatogramaRes.DefaultIfEmpty()
-                //             join hormonas in ctx.tb_Analisis_Hormonas on pf.id_analisis equals hormonas.analisis_id
-                //             into hormonasRes
-                //             from hormonasResxxx in hormonasRes.DefaultIfEmpty()
-                //             join inminoglobulinas in ctx.tb_Analisis_Inmunoglobulinas on pf.id_analisis equals inminoglobulinas.analisis_id
-                //             into inmunoglobulinasRes
-                //             from inmunoglobulinaResxxx in inmunoglobulinasRes.DefaultIfEmpty()
-                //             join inmunologia in ctx.tb_Analisis_Inmunologia on pf.id_analisis equals inmunologia.analisis_id
-                //             into inmunologiaRes
-                //             from inmunologiaResxxx in inmunologiaRes.DefaultIfEmpty()
-                //             join lipidogramaelectroforet in ctx.tb_Analisis_LipidoGrama_Electroforetico on pf.id_analisis equals lipidogramaelectroforet.analisis_id
-                //             into lipidElectroforetRes
-                //             from lipidElectroforetResxxx in lipidElectroforetRes.DefaultIfEmpty()
-                //             join microbiolog in ctx.tb_Analisis_Microbiologico on pf.id_analisis equals microbiolog.analisis_id
-                //             into microbiologRes 
-                //             from microbiologResxxx in microbiologRes.DefaultIfEmpty()
-                //             join orina_complementario in ctx.tb_Analisis_Orina_Complementarios on pf.id_analisis equals orina_complementario.tb_Analisis_Orina_Completa.analisis_id
-                //             into orina_compRes
-                //             from orina_compResxxx in orina_compRes.DefaultIfEmpty()
-                //             join orina_fisico_q in ctx.tb_Analisis_Orina_Examen_Fisico_Quimico on pf.id_analisis equals orina_fisico_q.tb_Analisis_Orina_Completa.analisis_id
-                //             into orina_completaRes
-                //             from orina_completaResxxx in orina_completaRes.DefaultIfEmpty()
-                //             join orina_sedimento in ctx.tb_Analisis_Orina_Examen_Sedimento on pf.id_analisis equals orina_sedimento.tb_Analisis_Orina_Completa.analisis_id
-                //             into orina_sedimentoRes
-                //             from orina_sedimentoResxxx in orina_sedimentoRes.DefaultIfEmpty()
-                //             join protelectroforetico in ctx.tb_Analisis_Proteinograma_Electroforetico on pf.id_analisis equals protelectroforetico.analisis_id
-                //             into protelectroforeticoRes 
-                //             from protelectroforeticoResxxx in protelectroforeticoRes.DefaultIfEmpty()
-                //             join quimica_hematica in ctx.tb_Analisis_Quimica_Hematica on pf.id_analisis equals quimica_hematica.analisis_id
-                //             into quimicaHematicaRes
-                //             from quimicaHematicaResxxx in quimicaHematicaRes.DefaultIfEmpty()
+        //        //             select pf
 
-                //             select pf
+        //        //             ).ToList();
+        //        int idpac = Convert.ToInt32(this.dgv_PacienteListAnalisis.CurrentRow.Cells[0].Value);
+        //        try
+        //        {
+        //            var query2 = (from p in ctx.tb_Analisis.Where(idp => idp.paciente_id == idpac)
+        //                          select p).ToList();
 
-                //             ).ToList();
-                int idpac = Convert.ToInt32(this.dgv_PacienteListAnalisis.CurrentRow.Cells[0].Value);
-                try
-                {
-                    var query2 = (from p in ctx.tb_Analisis.Where(idp => idp.paciente_id == idpac)
-                                  select p).ToList();
+        //            BindingSource bs = new BindingSource();
+        //            bs.DataSource = query2;
+        //            dgv_AnalisisxPac_fecha.DataSource = bs;
+        //        }
+        //        catch (Exception ex) { toolStripStatusLabel1.Text = ex.ToString(); }
 
-                    BindingSource bs = new BindingSource();
-                    bs.DataSource = query2;
-                    dgv_AnalisisxPac_fecha.DataSource = bs;
-                }
-                catch (Exception ex) { toolStripStatusLabel1.Text = ex.ToString(); }
+        //    }
 
-            }
-
-        }
+        //}
 
         private void btn_BuscarAnalisis_Click(object sender, EventArgs e)
         {
@@ -600,17 +602,45 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
             }
 
         }
-
+       
         #endregion
 
-       
+        private void tabPageControlStock_Enter(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            using (var ctx = new LabDBEntities())
+            {
+                bs.DataSource = (from prod in ctx.tb_Insumos
+                                select new {
+                                id=prod.id_insumo,
 
+                                Detalle= prod.detalle,
+                                Tipo=prod.tb_Tipo_Insumo.detalles,
+                                Marca= prod.marca_id,
+                                
+                                Cantidad_Disponible= prod.cant_disponible,
+                                Cantidad_Minima=prod.cant_minima,
+                                Medida=prod.tb_Medida_Insumo.descripcion,
+                                PrecioUnitario = prod.precio_unidad
+                               }).ToList();
+            }
+           
+            dataGridViewContStock.DataSource = bs;
+            
+        }
 
-
-
+        private void button4_Click(object sender, EventArgs e)
+        {
+           Ventanas.ControlStockFrm c = new Ventanas.ControlStockFrm();
+            c.ShowDialog();
+        }
+        
+      
+   
+   
 
     }
-
+    
 
 
 
@@ -645,9 +675,9 @@ namespace WindowsFormsApplication1.Vista.TabControlTodos
             this._idTel = id;
         }
 
-
+        
     }
-
+    
 }
 
 

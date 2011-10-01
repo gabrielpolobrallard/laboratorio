@@ -23,8 +23,6 @@ namespace WindowsFormsApplication1.Modelo
         public DbSet<Localidad> Localidad { get; set; }
         public DbSet<Provincia> Provincia { get; set; }
         public DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public DbSet<tb_Alarma_x_Insumo> tb_Alarma_x_Insumo { get; set; }
-        public DbSet<tb_Alarmas_Stock> tb_Alarmas_Stock { get; set; }
         public DbSet<tb_Analisis> tb_Analisis { get; set; }
         public DbSet<tb_Analisis_Enzimologia> tb_Analisis_Enzimologia { get; set; }
         public DbSet<tb_Analisis_Examen_MateriaFecal> tb_Analisis_Examen_MateriaFecal { get; set; }
@@ -59,12 +57,8 @@ namespace WindowsFormsApplication1.Modelo
         public DbSet<tb_Factura> tb_Factura { get; set; }
         public DbSet<tb_Factura_x_Analisis> tb_Factura_x_Analisis { get; set; }
         public DbSet<tb_GrupoSanguineo> tb_GrupoSanguineo { get; set; }
-        public DbSet<tb_InformeStock> tb_InformeStock { get; set; }
-        public DbSet<tb_Insumos> tb_Insumos { get; set; }
-        public DbSet<tb_Insumos_x_Informe_Stock> tb_Insumos_x_Informe_Stock { get; set; }
         public DbSet<tb_IVA> tb_IVA { get; set; }
         public DbSet<tb_Medicos> tb_Medicos { get; set; }
-        public DbSet<tb_Medida_Insumo> tb_Medida_Insumo { get; set; }
         public DbSet<tb_Muestras> tb_Muestras { get; set; }
         public DbSet<tb_Muestras_Tipo> tb_Muestras_Tipo { get; set; }
         public DbSet<tb_NotaPedido> tb_NotaPedido { get; set; }
@@ -73,7 +67,12 @@ namespace WindowsFormsApplication1.Modelo
         public DbSet<tb_Telefono_x_Donante> tb_Telefono_x_Donante { get; set; }
         public DbSet<tb_Telefonos_x_ObraSocial> tb_Telefonos_x_ObraSocial { get; set; }
         public DbSet<tb_TelefonosTodos> tb_TelefonosTodos { get; set; }
-        public DbSet<tb_Tipo_Insumo> tb_Tipo_Insumo { get; set; }
         public DbSet<tb_Usuarios> tb_Usuarios { get; set; }
+        public DbSet<tb_InformeStock> tb_InformeStock { get; set; }
+        public DbSet<tb_Medida_Insumo> tb_Medida_Insumo { get; set; }
+        public DbSet<tb_Tipo_Insumo> tb_Tipo_Insumo { get; set; }
+        public DbSet<tb_Alarmas_Stock> tb_Alarmas_Stock { get; set; }
+        public DbSet<tb_Insumo_Marca> tb_Insumo_Marca { get; set; }
+        public DbSet<tb_Insumos> tb_Insumos { get; set; }
     }
 }

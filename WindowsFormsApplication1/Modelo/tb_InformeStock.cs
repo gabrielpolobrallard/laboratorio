@@ -16,8 +16,8 @@ namespace WindowsFormsApplication1.Modelo
     {
         public tb_InformeStock()
         {
-            this.tb_Insumos_x_Informe_Stock = new HashSet<tb_Insumos_x_Informe_Stock>();
             this.tb_NotaPedido = new HashSet<tb_NotaPedido>();
+            this.tb_Insumos = new HashSet<tb_Insumos>();
         }
     
         // Primitive properties
@@ -31,8 +31,8 @@ namespace WindowsFormsApplication1.Modelo
         // Navigation properties
     
         public virtual tb_Usuarios tb_Usuarios { get; set; }
-        public virtual ICollection<tb_Insumos_x_Informe_Stock> tb_Insumos_x_Informe_Stock { get; set; }
         public virtual ICollection<tb_NotaPedido> tb_NotaPedido { get; set; }
+        public virtual ICollection<tb_Insumos> tb_Insumos { get; set; }
     
     }
 }
